@@ -1,7 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import { PrismicRichText, useFirstPrismicDocument, usePrismicDocumentsByType } from '@prismicio/react'
+
 
 function App() {
+
+  const [document] = usePrismicDocumentsByType("prispevek")
+  console.log(document)
   return (
     <div className="App">
       <header className="App-header">
