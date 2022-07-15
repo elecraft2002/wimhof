@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/wimhof/static/css/main.073c9b0a.css",
-    "main.js": "/wimhof/static/js/main.ee579644.js",
+    "main.js": "/wimhof/static/js/main.fbc7ef0f.js",
     "static/js/787.a658a1a1.chunk.js": "/wimhof/static/js/787.a658a1a1.chunk.js",
     "static/media/logo.svg": "/wimhof/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/wimhof/index.html",
     "main.073c9b0a.css.map": "/wimhof/static/css/main.073c9b0a.css.map",
-    "main.ee579644.js.map": "/wimhof/static/js/main.ee579644.js.map",
+    "main.fbc7ef0f.js.map": "/wimhof/static/js/main.fbc7ef0f.js.map",
     "787.a658a1a1.chunk.js.map": "/wimhof/static/js/787.a658a1a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.ee579644.js"
+    "static/js/main.fbc7ef0f.js"
   ]
 }
