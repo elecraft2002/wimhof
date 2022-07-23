@@ -1,0 +1,14 @@
+.hedding {
+  position: absolute;
+  margin: 1rem;
+  left: 50vw;
+  top: 40vh;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--white);
+  filter: drop-shadow(0 0 6px black);
+}
+
+.hedding__highlited {
+  color: var(--secondary);
+}
