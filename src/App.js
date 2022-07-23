@@ -1,12 +1,15 @@
 import './App.css';
+import "normalize.css"
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  Routes
 } from "react-router-dom";
 import { PrismicRichText, useFirstPrismicDocument, usePrismicDocumentByID, usePrismicDocumentsByType } from '@prismicio/react'
 import Nav from "./components/nav/nav"
+import Home from "./pages/home/home.jsx"
 
 function App() {
 
@@ -15,8 +18,12 @@ function App() {
   console.log(page)
   return (
     <>
+      <Nav></Nav>
       <Router>
-        <Nav></Nav>
+        <Routes>
+          <Route path="/" element={<Home />}>
+          </Route>
+        </Routes>
       </Router>
     </>
   );
