@@ -21,7 +21,7 @@ function App() {
       <Nav navigationList={navigationList}></Nav>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />}>
+          <Route path="/wimhof" element={<Home />}>
           </Route>
         </Routes>
       </Router>
