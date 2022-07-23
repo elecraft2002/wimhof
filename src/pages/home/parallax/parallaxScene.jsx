@@ -25,7 +25,7 @@ export default function ParallaxScene() {
         <Parallax className='parallax__image__container' speed={-50}>
           <img alt='mountains' className='parallax__image' src={image3} />
         </Parallax>
-        <Parallax className='parallax__image__container' speed={-35}>
+        <Parallax className='parallax__image__container' speed={-300}>
           <Heading />
         </Parallax>
         <Parallax className='parallax__image__container' speed={-30}>

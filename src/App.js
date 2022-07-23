@@ -12,8 +12,8 @@ import Home from "./pages/home/Home.jsx"
 import { useSinglePrismicDocument } from '@prismicio/react'
 
 function App() {
-
-  const [navigationList] = useSinglePrismicDocument("navigation")
+  //const 
+  const [navigationList] = useSinglePrismicDocument("navigation", {/*  lang  */})
   console.log(navigationList)
   //const [document] = usePrismicDocumentsByType("prispevek")
   return (

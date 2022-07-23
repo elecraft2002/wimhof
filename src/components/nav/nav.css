@@ -135,3 +135,9 @@
     z-index: 999;
   }
 }
+@media screen and (min-width: 1200px){
+  .nav{
+    width: 1200px;
+    padding: 0 calc(50vw - 600px);
+  }
+}
