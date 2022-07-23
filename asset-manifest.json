@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wimhof/static/css/main.86ec16e6.css",
-    "main.js": "/wimhof/static/js/main.8f61ea9f.js",
+    "main.css": "/wimhof/static/css/main.a8517737.css",
+    "main.js": "/wimhof/static/js/main.2c35e6a6.js",
     "static/js/787.a658a1a1.chunk.js": "/wimhof/static/js/787.a658a1a1.chunk.js",
     "static/media/parallax-2.png": "/wimhof/static/media/parallax-2.2613dadbc7984cb26508.png",
     "static/media/parallax-4.png": "/wimhof/static/media/parallax-4.624058b1f5ac72b6db21.png",
@@ -9,13 +9,16 @@
     "static/media/parallax-6.png": "/wimhof/static/media/parallax-6.c7b8f62fb11ec8c472da.png",
     "static/media/parallax-5.png": "/wimhof/static/media/parallax-5.a9a0b87fea3fca142513.png",
     "static/media/parallax-3.png": "/wimhof/static/media/parallax-3.39b57e510906ea6f9241.png",
+    "static/media/instagram.svg": "/wimhof/static/media/instagram.c688647e899d02820b9696fdeebbb433.svg",
     "index.html": "/wimhof/index.html",
-    "main.86ec16e6.css.map": "/wimhof/static/css/main.86ec16e6.css.map",
-    "main.8f61ea9f.js.map": "/wimhof/static/js/main.8f61ea9f.js.map",
+    "static/media/facebook.svg": "/wimhof/static/media/facebook.33b46698293279707cf52a36765f0562.svg",
+    "static/media/admin.svg": "/wimhof/static/media/admin.7796f3cc2313968f09a1fc8363960406.svg",
+    "main.a8517737.css.map": "/wimhof/static/css/main.a8517737.css.map",
+    "main.2c35e6a6.js.map": "/wimhof/static/js/main.2c35e6a6.js.map",
     "787.a658a1a1.chunk.js.map": "/wimhof/static/js/787.a658a1a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.86ec16e6.css",
-    "static/js/main.8f61ea9f.js"
+    "static/css/main.a8517737.css",
+    "static/js/main.2c35e6a6.js"
   ]
 }
