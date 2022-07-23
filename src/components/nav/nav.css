@@ -8,6 +8,8 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  justify-content: end;
+  align-items: center;
 }
 
 .nav__list {
@@ -16,17 +18,120 @@
   display: flex;
   margin: 0;
 }
-.nav__item{
-    margin: 0;
-    padding: 1rem 1rem;
+.nav__item {
+  margin: 0;
+  padding: 0;
 }
 .nav__item a {
-    display: block;
-    height: 1.5rem;
-    color: red;
+  display: block;
+  height: 1.5rem;
+  color: var(--white);
+  text-decoration: none;
+  padding: 1rem 1rem;
+}
+.nav__item a:hover,
+.nav__item a:hover img {
+  color: var(--secondary);
+  fill: var(--secondary);
+}
+.nav__item img {
+  height: 100%;
+  aspect-ratio: 1;
 }
 
-.nav__item img{
-    height: 100%;
-    aspect-ratio: 1;
+#menu-bar {
+  transition: 0.3s ease;
+  width: 45px;
+  height: 40px;
+  cursor: pointer;
+  display: none;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: var(--primary);
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.menu-bg {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 999;
+}
+
+.menu-bg {
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: var(--primary);
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.change .bar {
+  background-color: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+@media screen and (max-width: 700px) {
+  .menu-bg.change {
+    width: 520px;
+    height: 560px;
+    transform: translate(-60%, -30%);
+  }
+  #menu-bar {
+    display: block;
+  }
+  .nav__list {
+    display: none;
+  }
+  .nav__list.change {
+    display: block;
+    padding: 0;
+  }
+  .nav__item {
+    padding: 0;
+    text-transform: uppercase;
+  }
+  .nav {
+    justify-content: start;
+    width: auto;
+    background: none;
+    backdrop-filter: unset;
+    filter: none;
+    box-shadow: none;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav__closer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+  }
 }

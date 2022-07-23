@@ -25,14 +25,14 @@ export default function ParallaxScene() {
         <Parallax className='parallax__image__container' speed={-50}>
           <img alt='mountains' className='parallax__image' src={image3} />
         </Parallax>
-        <Parallax className='parallax__image__container' speed={-40}>
+        <Parallax className='parallax__image__container' speed={-35}>
           <Heading />
         </Parallax>
         <Parallax className='parallax__image__container' speed={-30}>
           <img alt='mountains' className='parallax__image' src={image2} />
         </Parallax>
         <Parallax className='parallax__image__container'>
-          <img alt='mountains' style={{ objectPosition: "30%" }} className='parallax__image' src={image1} />
+          <img alt='mountains' style={{ objectPosition: "40%" }} className='parallax__image' src={image1} />
         </Parallax>
       </div>
     </ParallaxProvider>
