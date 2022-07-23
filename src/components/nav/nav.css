@@ -1,4 +1,32 @@
 .nav {
-    position: fixed;
-    z-index: 999;
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+.nav__item{
+    margin: 0;
+    padding: 1rem 1rem;
+}
+.nav__item a {
+    display: block;
+    height: 1.5rem;
+    color: red;
+}
+
+.nav__item img{
+    height: 100%;
+    aspect-ratio: 1;
 }

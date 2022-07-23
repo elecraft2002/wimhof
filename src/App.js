@@ -7,18 +7,18 @@ import {
   Link,
   Routes
 } from "react-router-dom";
-import { PrismicRichText, useFirstPrismicDocument, usePrismicDocumentByID, usePrismicDocumentsByType } from '@prismicio/react'
-import Nav from "./components/nav/nav"
-import Home from "./pages/home/home.jsx"
+import Nav from "./components/nav/Nav"
+import Home from "./pages/home/Home.jsx"
+import { useSinglePrismicDocument } from '@prismicio/react'
 
 function App() {
 
-  const [document] = usePrismicDocumentsByType("prispevek")
-  const [page] = usePrismicDocumentByID("landing_page")
-  console.log(page)
+  const [navigationList] = useSinglePrismicDocument("navigation")
+  console.log(navigationList)
+  //const [document] = usePrismicDocumentsByType("prispevek")
   return (
     <>
-      <Nav></Nav>
+      <Nav navigationList={navigationList}></Nav>
       <Router>
         <Routes>
           <Route path="/" element={<Home />}>
