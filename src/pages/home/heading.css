@@ -2,13 +2,18 @@
   position: absolute;
   margin: 1rem;
   left: 50vw;
-  top: 50vh;
+  top: 40vh;
   transform: translate(-50%, -50%);
   text-align: center;
   color: var(--white);
-  filter: drop-shadow(0 0 6px black);
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.507));
 }
 
 .hedding__highlited {
   color: var(--secondary);
+}
+@media only screen and (max-width: 500px) {
+  .hedding {
+    font-size: 1.5rem;
+  }
 }
