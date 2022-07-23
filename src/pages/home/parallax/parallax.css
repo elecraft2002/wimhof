@@ -1,7 +1,7 @@
 .parallax {
   height: 100vh;
   overflow: hidden;
-  background-color: aquamarine;
+  background-color: #3C3080;
   position: relative;
 }
 .parallax__image__container{
