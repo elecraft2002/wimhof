@@ -5,7 +5,6 @@
 }
 @media screen and (min-width:1200px) {
     .courses{
-        width: 1200px;
         padding-left: calc(50vw - 600px);
         padding-right: calc(50vw - 600px);
     }
