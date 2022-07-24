@@ -4,6 +4,7 @@ import { PrismicRichText, useFirstPrismicDocument, usePrismicDocumentByID, usePr
 import Courses from './Courses'
 import Pilire from './Pilire'
 import Recenze from './Recenze'
+import AboutMe from './AboutMe'
 
 export default function Home(props) {
     const [page] = useSinglePrismicDocument("navigation")
@@ -13,6 +14,7 @@ export default function Home(props) {
             <ParallaxScene />
             <Courses language={props.language} />
             <Pilire />
+            <AboutMe />
             <Recenze language={props.language} />
         </>
     )

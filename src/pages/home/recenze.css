@@ -1,0 +1,25 @@
+.recenze__wave {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(calc(-100% + 1px));
+}
+
+.recenze {
+  margin-top: 11vw;
+  position: relative;
+  background: var(--gray);
+}
+@media screen and (min-width: 1200px) {
+  .recenze {
+    padding-left: calc(50vw - 600px);
+    padding-right: calc(50vw - 600px);
+  }
+}
+.recenze__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}

@@ -3,9 +3,11 @@ body {
   --primary: #12212e;
   --secondary: #f8a41a;
   --white: #ffffff;
+  --gray: #e8eded;
   font-family: "Roboto", sans-serif;
 }
-h2{
+h2 {
   text-align: center;
   text-transform: uppercase;
+  color: var(--primary);
 }
