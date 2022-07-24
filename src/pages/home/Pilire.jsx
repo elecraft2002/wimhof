@@ -11,9 +11,9 @@ export default function Pilire() {
         <section className='pilire__container'>
             <img className='pilire__wave' src={topWave} alt="wave" />
             <div className='pilire'>
-                <h2>3 pilíře wim hofovy metody</h2>
+                <Fade top delay={300}><h2>3 pilíře wim hofovy metody</h2></Fade>
                 <div className='pilire__list'>
-                    <Fade  top>
+                    <Fade left delay={500}>
                         <div className='pilir'>
                             <figure style={{ animationDelay: 0 }} className='pilire__img__container'><img src={commitment} alt="commitment" /></figure>
                             <p>
@@ -22,7 +22,7 @@ export default function Pilire() {
                             </p>
                         </div>
                     </Fade>
-                    <Fade top>
+                    <Fade left delay={700}>
                         <div className='pilir'>
                             <figure style={{ animationDelay: 1 }} className='pilire__img__container'><img src={breathing} alt="breathing" /></figure>
                             <p>
@@ -31,7 +31,7 @@ export default function Pilire() {
                             </p>
                         </div>
                     </Fade>
-                    <Fade top>
+                    <Fade left delay={900}>
                         <div className='pilir'>
                             <figure style={{ animationDelay: 3 }} className='pilire__img__container'><img src={cold} alt="cold" /></figure>
                             <p>

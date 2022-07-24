@@ -18,6 +18,8 @@
 
 .about__text {
   text-align: left;
+  max-width: 600px;
+  margin: auto;
 }
 
 @media screen and (min-width: 1200px) {

@@ -7,6 +7,7 @@
   padding: 1em;
   margin: 1em;
   color: var(--primary);
+  overflow: hidden;
 }
 .comment:nth-child(2n + 1) {
   color: var(--white);

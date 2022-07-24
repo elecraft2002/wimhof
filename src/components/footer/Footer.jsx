@@ -25,8 +25,8 @@ export default function Footer(props) {
                     <h3>Navigace</h3>
                     <div className='footer__data'>
                         <ul>
-                            {props.navigationList.data.list.map(item => {
-                                return <NavItem key={item.id} >{item.cell[0].text}</NavItem>
+                            {props.navigationList.data.list.map((item,i) => {
+                                return <NavItem key={i} >{item.cell[0].text}</NavItem>
                             })}
                         </ul>
                     </div>

@@ -3,8 +3,9 @@ import Star from './Star'
 import * as prismicH from '@prismicio/helpers';
 import { PrismicRichText } from '@prismicio/react';
 import "./comment.css"
+import { Fade } from 'react-reveal'
 
-export default function Comment({recenze}) {
+export default function Comment({ recenze }) {
 
     function Stars() {
         let stars = []
@@ -16,9 +17,9 @@ export default function Comment({recenze}) {
 
     return (
         <article className='comment'>
-            <div className='comment__rating'><Stars /></div>
-            <h3 className='comment__autor'>{recenze.data.autor[0].text}</h3>
-            <PrismicRichText field={recenze.data.text_recenze} />
+            <Fade top delay={500}><div className='comment__rating'><Stars /></div></Fade>
+            <Fade left delay={500}><h3 className='comment__autor'>{recenze.data.autor[0].text}</h3></Fade>
+            <Fade left delay={500}><PrismicRichText field={recenze.data.text_recenze} /></Fade>
         </article>
     )
 }
