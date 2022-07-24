@@ -13,14 +13,14 @@ export default function Nav({ navigationList, languageNum, setLanguageNum, langu
   return (
     <>
       {isNavOpened ? null : <div className='nav__closer' onClick={() => handleNavOpen(!isNavOpened)}></div>}
-      <div className={`menu-bg ${isNavOpened ? "" : "change"}`} id="menu-bg"></div>
-      <div className={`nav ${isNavOpened ? "" : "change"}`}>
-        <div id="menu-bar" className={isNavOpened ? "" : "change"} onClick={() => handleNavOpen(!isNavOpened)}>
+      <div className={`menu-bg ${!isNavOpened ? "" : "change"}`} id="menu-bg"></div>
+      <div className={`nav ${!isNavOpened ? "" : "change"}`}>
+        <div id="menu-bar" className={!isNavOpened ? "" : "change"} onClick={() => handleNavOpen(!isNavOpened)}>
           <div id="bar1" className="bar"></div>
           <div id="bar2" className="bar"></div>
           <div id="bar3" className="bar"></div>
         </div>
-        <ul className={`nav__list ${isNavOpened ? "" : "change"}`}>
+        <ul className={`nav__list ${!isNavOpened ? "" : "change"}`}>
           {navigationList ? navigationList.data.list.map((item, i) => {
             return <NavItem item={item.cell[0].text} key={i} />
           }) : null}

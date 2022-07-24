@@ -1,8 +1,8 @@
 .course {
   background: var(--white);
   filter: drop-shadow(0 0 6px black);
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
   border-radius: 1em;
   margin: 1em;
   max-width: 400px;
@@ -69,6 +69,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .course__info{

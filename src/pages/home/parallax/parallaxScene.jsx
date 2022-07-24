@@ -1,5 +1,5 @@
-import React from 'react'
-import { Parallax, ParallaxProvider } from 'react-scroll-parallax'
+import React, { useRef } from 'react'
+import { Parallax, ParallaxProvider, useParallaxController } from 'react-scroll-parallax'
 import "./parallax.css"
 import image1 from "../../../assets/images/parallax/parallax-1.png"
 import image2 from "../../../assets/images/parallax/parallax-2.png"
