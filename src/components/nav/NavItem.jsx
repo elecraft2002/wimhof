@@ -1,7 +1,8 @@
 import React from 'react'
 
-export default function NavItem({item}) {
+export default function NavItem(props) {
+    console.log(props)
     return (
-        <li className='nav__item'><a href=''>{item}</a></li>
+        <li className='nav__item'><a href={`#${props.children}`}>{props.children}</a></li>
     )
 }

@@ -12,7 +12,7 @@ export default function Nav({ navigationList, languageNum, setLanguageNum, langu
   const [isNavOpened, handleNavOpen] = useState(false)
   return (
     <>
-      {isNavOpened ? null : <div className='nav__closer' onClick={() => handleNavOpen(!isNavOpened)}></div>}
+      {!isNavOpened ? null : <div className='nav__closer' onClick={() => handleNavOpen(!isNavOpened)}></div>}
       <div className={`menu-bg ${!isNavOpened ? "" : "change"}`} id="menu-bg"></div>
       <div className={`nav ${!isNavOpened ? "" : "change"}`}>
         <div id="menu-bar" className={!isNavOpened ? "" : "change"} onClick={() => handleNavOpen(!isNavOpened)}>
@@ -22,7 +22,7 @@ export default function Nav({ navigationList, languageNum, setLanguageNum, langu
         </div>
         <ul className={`nav__list ${!isNavOpened ? "" : "change"}`}>
           {navigationList ? navigationList.data.list.map((item, i) => {
-            return <NavItem item={item.cell[0].text} key={i} />
+            return <NavItem key={i} >{item.cell[0].text}</NavItem>
           }) : null}
           <li className='nav__item' onClick={() => setLanguageNum(languageNum + 1)}><a>{language}</a></li>
         </ul>

@@ -9,9 +9,10 @@ import Nav from "./components/nav/Nav"
 import Home from "./pages/home/Home.jsx"
 import { useSinglePrismicDocument } from '@prismicio/react'
 import { useState } from 'react';
+import Footer from './components/footer/Footer';
 
 function App() {
-  const languages = [{lang:"cs-cz",text:"CZ"}, {lang:"en",text:"EN"}]
+  const languages = [{ lang: "cs-cz", text: "CZ" }, { lang: "en", text: "EN" }]
 
   const [languageNum, setLanguageNum] = useState(0)
   const [navigationList] = useSinglePrismicDocument("navigation", { lang: languages[languageNum % languages.length].lang })
@@ -25,6 +26,7 @@ function App() {
           </Route>
         </Routes>
       </Router>
+      <Footer navigationList={navigationList} language={languages[(languageNum + 1) % languages.length].text} />
     </>
   );
 }
