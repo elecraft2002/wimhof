@@ -1,0 +1,18 @@
+.pilire {
+  background: var(--primary);
+}
+.pilire__wave {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  transform: translateY(calc(-100% + 1px));
+}
+
+.pilire__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.pilire h2{
+    color: var(--secondary);
+}

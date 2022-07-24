@@ -5,3 +5,6 @@ body {
   --white: #ffffff;
   font-family: "Roboto", sans-serif;
 }
+h2{
+  text-align: center;
+}

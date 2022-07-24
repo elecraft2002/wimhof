@@ -3,6 +3,14 @@
   margin-top: -1em;
   padding-top: 1em;
 }
+@media screen and (min-width:1200px) {
+    .courses{
+        width: 1200px;
+        padding-left: calc(50vw - 600px);
+        padding-right: calc(50vw - 600px);
+    }
+}
+
 .courses::before {
   background: url(../../assets/images/mountains.jpg);
   background-repeat: no-repeat;
@@ -15,6 +23,7 @@
   position: absolute;
   filter: blur(3px);
   opacity: 0.3;
+  left: 0;
 }
 .courses__list {
   display: flex;
@@ -22,4 +31,7 @@
   flex-grow: 1;
   align-items: stretch;
   list-style: none;
+  padding: 0;
+  justify-content: space-evenly;
+  margin: 2rem 0;
 }

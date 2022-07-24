@@ -5,7 +5,14 @@
   grid-template-rows: 1fr 1fr;
   border-radius: 1em;
   margin: 1em;
-  max-width: 400px;
+  max-width: 350px;
+  z-index: 1;
+}
+
+@media screen and (min-width: 400px) {
+    .course {
+        width: 350px;
+    }
 }
 
 .course__bottom__container {
