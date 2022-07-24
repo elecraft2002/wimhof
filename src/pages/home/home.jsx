@@ -13,7 +13,7 @@ export default function Home(props) {
             <ParallaxScene />
             <Courses language={props.language} />
             <Pilire />
-            <Recenze />
+            <Recenze language={props.language} />
         </>
     )
 }
