@@ -1,5 +1,5 @@
 import { useAllPrismicDocumentsByType } from '@prismicio/react'
-import Comment from './Comment'
+import Comment from '../../components/comment/Comment.jsx'
 import React from 'react'
 
 export default function Recenze(props) {

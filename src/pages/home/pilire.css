@@ -69,3 +69,10 @@
     transform: translateY(0px);
   }
 }
+
+@media screen and (min-width:1200px) {
+  .pilire__list{
+    padding-left: calc(50vw - 600px);
+    padding-right: calc(50vw - 600px);
+  }
+}
