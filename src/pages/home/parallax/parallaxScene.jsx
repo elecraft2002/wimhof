@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { Parallax, ParallaxProvider, useParallaxController } from 'react-scroll-parallax'
+import { Parallax, ParallaxProvider, useParallaxController, ParallaxBanner } from 'react-scroll-parallax'
 import "./parallax.css"
 import image1 from "../../../assets/images/parallax/parallax-1.png"
 import image2 from "../../../assets/images/parallax/parallax-2.png"
@@ -12,6 +12,54 @@ import Button from '../../../components/button/Button'
 import Fade from 'react-reveal/Fade';
 
 export default function ParallaxScene() {
+  const parallaxImage6 = {
+    children: <div className='parallax__image__container'><img alt='mountains' style={{ objectPosition: "20%" }} className='parallax__image' src={image6} /></div>,
+    translateY: [0, 90],
+  };
+  const parallaxImage5 = {
+    children: <div className='parallax__image__container'><img alt='mountains' className='parallax__image' src={image5} /></div>
+    ,
+    translateY: [0, 80],
+  };
+  const parallaxImage4 = {
+    children: <div className='parallax__image__container'><img alt='mountains' className='parallax__image' src={image4} /></div>
+    ,
+    translateY: [0, 70],
+  };
+  const parallaxImage3 = {
+    children: <div className='parallax__image__container'><img alt='mountains' className='parallax__image' src={image3} /></div>
+    ,
+    translateY: [6, 60],
+  };
+  const parallaxHeading = {
+    children: <div className='parallax__image__container'><Heading /></div>
+    ,
+    translateY: [0, 90],
+  };
+  const parallaxImage2 = {
+    children: <div className='parallax__image__container'><img alt='mountains' className='parallax__image' src={image2} /></div>
+    ,
+    translateY: [6, 50],
+  };
+  const parallaxImage1 = {
+    children: <div className='parallax__image__container'><img style={{ objectPosition: "40%" }} alt='mountains' className='parallax__image' src={image1} /></div>
+    ,
+    translateY: [0, 0],
+  };
+  const parallaxButton = {
+    children: <div className='parallax__image__container'><Button style={{ bottom: "5vw", left: "50%", position: "absolute", transform: "translate(-50%)" }} >Ahoj</Button></div>
+    ,
+    translateY: [0, -5],
+  };
+
+  return (
+    <ParallaxProvider>
+      <ParallaxBanner className='parallax' layers={[parallaxImage6, parallaxImage5, parallaxImage4, parallaxImage3, parallaxHeading, parallaxImage2, parallaxImage1, parallaxButton]}>
+
+      </ParallaxBanner>
+    </ParallaxProvider>
+  )
+
   return (
     <ParallaxProvider>
       <div className='parallax'>
