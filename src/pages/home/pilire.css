@@ -1,5 +1,6 @@
 .pilire {
   background: var(--primary);
+  color: var(--white);
 }
 .pilire__wave {
   width: 100%;
@@ -8,11 +9,61 @@
   transform: translateY(calc(-100% + 1px));
 }
 
+.pilire__wave--bottom{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(calc(100% - 3px));
+
+}
+
 .pilire__container {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.pilire h2{
-    color: var(--secondary);
+.pilire h2,
+.pilire h3 {
+  color: var(--secondary);
+  text-align: center;
+}
+.pilire img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pilire__img__container {
+  max-width: 200px;
+  animation: levitate 5s infinite ease-in-out;
+}
+
+.pilire__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1em;
+}
+
+.pilir {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+}
+
+.pilir p {
+  font-weight: 200;
+  padding-bottom: .5em;
+  border-bottom: 2px solid var(--secondary);
+}
+@keyframes levitate {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }
