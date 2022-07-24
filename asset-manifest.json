@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wimhof/static/css/main.cdee8b10.css",
-    "main.js": "/wimhof/static/js/main.cd95557d.js",
+    "main.js": "/wimhof/static/js/main.d37bfb59.js",
     "static/js/787.a658a1a1.chunk.js": "/wimhof/static/js/787.a658a1a1.chunk.js",
     "static/media/parallax-2.png": "/wimhof/static/media/parallax-2.2613dadbc7984cb26508.png",
     "static/media/parallax-4.png": "/wimhof/static/media/parallax-4.624058b1f5ac72b6db21.png",
@@ -25,11 +25,11 @@
     "static/media/wave.svg": "/wimhof/static/media/wave.bae3fba67e2bd3590b90722424d18766.svg",
     "static/media/wave_down.svg": "/wimhof/static/media/wave_down.86a9e907f4db6d152374e6ae8b0d800e.svg",
     "main.cdee8b10.css.map": "/wimhof/static/css/main.cdee8b10.css.map",
-    "main.cd95557d.js.map": "/wimhof/static/js/main.cd95557d.js.map",
+    "main.d37bfb59.js.map": "/wimhof/static/js/main.d37bfb59.js.map",
     "787.a658a1a1.chunk.js.map": "/wimhof/static/js/787.a658a1a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cdee8b10.css",
-    "static/js/main.cd95557d.js"
+    "static/js/main.d37bfb59.js"
   ]
 }
