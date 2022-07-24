@@ -1,24 +1,28 @@
 {
   "files": {
-    "main.css": "/wimhof/static/css/main.83e10da3.css",
-    "main.js": "/wimhof/static/js/main.904c74d7.js",
+    "main.css": "/wimhof/static/css/main.c2454096.css",
+    "main.js": "/wimhof/static/js/main.697e6962.js",
     "static/js/787.a658a1a1.chunk.js": "/wimhof/static/js/787.a658a1a1.chunk.js",
     "static/media/parallax-2.png": "/wimhof/static/media/parallax-2.2613dadbc7984cb26508.png",
     "static/media/parallax-4.png": "/wimhof/static/media/parallax-4.624058b1f5ac72b6db21.png",
     "static/media/parallax-1.png": "/wimhof/static/media/parallax-1.fe3075242069d1ed80ba.png",
     "static/media/parallax-6.png": "/wimhof/static/media/parallax-6.c7b8f62fb11ec8c472da.png",
     "static/media/parallax-5.png": "/wimhof/static/media/parallax-5.a9a0b87fea3fca142513.png",
+    "static/media/mountains.jpg": "/wimhof/static/media/mountains.97ddb883e301770b4b85.jpg",
     "static/media/parallax-3.png": "/wimhof/static/media/parallax-3.39b57e510906ea6f9241.png",
+    "static/media/Intersection 1.png": "/wimhof/static/media/Intersection 1.044af49cf80faae2eb23.png",
     "static/media/instagram.svg": "/wimhof/static/media/instagram.c688647e899d02820b9696fdeebbb433.svg",
+    "static/media/info.svg": "/wimhof/static/media/info.3240b42f746d29f6885d1f18c3a5e2b6.svg",
     "index.html": "/wimhof/index.html",
     "static/media/facebook.svg": "/wimhof/static/media/facebook.33b46698293279707cf52a36765f0562.svg",
+    "static/media/location.svg": "/wimhof/static/media/location.bafcd510e3fe10d0620d159134c86ac6.svg",
     "static/media/admin.svg": "/wimhof/static/media/admin.7796f3cc2313968f09a1fc8363960406.svg",
-    "main.83e10da3.css.map": "/wimhof/static/css/main.83e10da3.css.map",
-    "main.904c74d7.js.map": "/wimhof/static/js/main.904c74d7.js.map",
+    "main.c2454096.css.map": "/wimhof/static/css/main.c2454096.css.map",
+    "main.697e6962.js.map": "/wimhof/static/js/main.697e6962.js.map",
     "787.a658a1a1.chunk.js.map": "/wimhof/static/js/787.a658a1a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83e10da3.css",
-    "static/js/main.904c74d7.js"
+    "static/css/main.c2454096.css",
+    "static/js/main.697e6962.js"
   ]
 }
