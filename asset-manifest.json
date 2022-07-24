@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wimhof/static/css/main.67d93d78.css",
-    "main.js": "/wimhof/static/js/main.ae97b297.js",
+    "main.css": "/wimhof/static/css/main.41e97674.css",
+    "main.js": "/wimhof/static/js/main.29e7d469.js",
     "static/js/787.a658a1a1.chunk.js": "/wimhof/static/js/787.a658a1a1.chunk.js",
     "static/media/parallax-2.png": "/wimhof/static/media/parallax-2.2613dadbc7984cb26508.png",
     "static/media/parallax-4.png": "/wimhof/static/media/parallax-4.624058b1f5ac72b6db21.png",
@@ -11,20 +11,23 @@
     "static/media/mountains.jpg": "/wimhof/static/media/mountains.97ddb883e301770b4b85.jpg",
     "static/media/parallax-3.png": "/wimhof/static/media/parallax-3.39b57e510906ea6f9241.png",
     "static/media/Intersection 1.png": "/wimhof/static/media/Intersection 1.044af49cf80faae2eb23.png",
+    "static/media/cold-therapy-wim-hof-method.png": "/wimhof/static/media/cold-therapy-wim-hof-method.a6c1e0772441686ef3b0.png",
+    "static/media/commitment-with-wim-hof-method.png": "/wimhof/static/media/commitment-with-wim-hof-method.d01e5644d53f23b04edb.png",
+    "static/media/breathing-with-wim-hof-method.png": "/wimhof/static/media/breathing-with-wim-hof-method.b804811dedef8b92be86.png",
     "static/media/instagram.svg": "/wimhof/static/media/instagram.c688647e899d02820b9696fdeebbb433.svg",
     "static/media/info.svg": "/wimhof/static/media/info.3240b42f746d29f6885d1f18c3a5e2b6.svg",
     "index.html": "/wimhof/index.html",
     "static/media/facebook.svg": "/wimhof/static/media/facebook.33b46698293279707cf52a36765f0562.svg",
     "static/media/location.svg": "/wimhof/static/media/location.bafcd510e3fe10d0620d159134c86ac6.svg",
-    "static/media/wave_down.svg": "/wimhof/static/media/wave_down.9a4972fd3858021ca08b015ca100a291.svg",
     "static/media/admin.svg": "/wimhof/static/media/admin.7796f3cc2313968f09a1fc8363960406.svg",
     "static/media/wave.svg": "/wimhof/static/media/wave.bae3fba67e2bd3590b90722424d18766.svg",
-    "main.67d93d78.css.map": "/wimhof/static/css/main.67d93d78.css.map",
-    "main.ae97b297.js.map": "/wimhof/static/js/main.ae97b297.js.map",
+    "static/media/wave_down.svg": "/wimhof/static/media/wave_down.86a9e907f4db6d152374e6ae8b0d800e.svg",
+    "main.41e97674.css.map": "/wimhof/static/css/main.41e97674.css.map",
+    "main.29e7d469.js.map": "/wimhof/static/js/main.29e7d469.js.map",
     "787.a658a1a1.chunk.js.map": "/wimhof/static/js/787.a658a1a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67d93d78.css",
-    "static/js/main.ae97b297.js"
+    "static/css/main.41e97674.css",
+    "static/js/main.29e7d469.js"
   ]
 }
