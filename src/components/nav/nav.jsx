@@ -5,7 +5,10 @@ import facebook from "../../assets/svgs/facebook.svg"
 import instagram from "../../assets/svgs/instagram.svg"
 import admin from "../../assets/svgs/admin.svg"
 
-export default function Nav({ navigationList }) {
+export default function Nav({ navigationList, languageNum, setLanguageNum, language }) {
+
+  console.log(languageNum)
+
   const [isNavOpened, handleNavOpen] = useState(false)
   return (
     <>
@@ -21,6 +24,7 @@ export default function Nav({ navigationList }) {
           {navigationList ? navigationList.data.list.map((item, i) => {
             return <NavItem item={item.cell[0].text} key={i} />
           }) : null}
+          <li className='nav__item' onClick={() => setLanguageNum(languageNum + 1)}><a>{language}</a></li>
         </ul>
         <ul className='nav__list'>
           <li className='nav__item'><a href=''><img src={facebook} alt="facebook" /></a></li>

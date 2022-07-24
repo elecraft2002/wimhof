@@ -1,0 +1,84 @@
+.course {
+  background: var(--white);
+  filter: drop-shadow(0 0 6px black);
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+  margin: 1em;
+  max-width: 400px;
+}
+
+.course__bottom__container {
+  overflow: hidden;
+  border-radius: 1em;
+}
+.course__bottom {
+  background: var(--white);
+}
+.course__image__container {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 100px;
+  margin: 0;
+}
+
+.course__image__container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.course__row {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  gap: 1em;
+  align-items: center;
+}
+
+.course__upper {
+  padding: 1em;
+  background:  linear-gradient(to top, rgba(255, 255, 255, 0.514) 10%,
+  rgba(255,255,255,1)), url(../../assets/images/mountains.jpg);
+  overflow: hidden;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1em;
+  margin-bottom: -2em;
+  padding-bottom: 2em;
+}
+
+.course span {
+  display: flex;
+  gap: 1em;
+}
+
+.course span * {
+  font-weight: 200;
+}
+
+.course__date {
+  font-weight: 500;
+  font-size: 2em;
+}
+.course__price {
+  font-weight: 500;
+}
+.course__bottom {
+  border-radius: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.course__info{
+    padding: 1em;
+}
+
+.course__info p {
+    color: var(--secondary);
+}
+
+.course__info p:first-of-type{
+    font-weight: 500;
+}

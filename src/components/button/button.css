@@ -1,0 +1,17 @@
+.button {
+  background: var(--secondary);
+  padding: 1em 2em;
+  border-radius: 1em;
+  font-weight: 500;
+  color: var(--white);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.button:hover {
+  transform: scale(1.1);
+  background: #ffb845;
+}
+.button:active {
+  background: #ffca76;
+  color: var(--primary);
+}

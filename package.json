@@ -11,12 +11,15 @@
     "@testing-library/user-event": "^13.5.0",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
+    "react-animated-3d-card": "^1.0.2",
     "react-dom": "^18.2.0",
     "react-parallax": "^3.5.1",
+    "react-reveal": "^1.2.2",
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "react-scroll-parallax": "^3.2.0",
+    "react-spring": "^9.5.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
