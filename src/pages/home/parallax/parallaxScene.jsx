@@ -19,7 +19,7 @@ export default function ParallaxScene() {
   const parallaxImage5 = {
     children: <div className='parallax__image__container'><img alt='mountains' className='parallax__image' src={image5} /></div>
     ,
-    translateY: [-10, 80],
+    translateY: [-10, 70],
   };
   const parallaxImage4 = {
     children: <div className='parallax__image__container'><img alt='mountains' className='parallax__image' src={image4} /></div>
