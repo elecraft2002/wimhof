@@ -10,6 +10,7 @@ import Home from "./pages/home/Home.jsx"
 import { useSinglePrismicDocument } from '@prismicio/react'
 import { useState } from 'react';
 import Footer from './components/footer/Footer';
+import CoursePage from './pages/course/CoursePage';
 
 function App() {
   const languages = [{ lang: "cs-cz", text: "CZ" }, { lang: "en", text: "EN" }]
@@ -20,12 +21,16 @@ function App() {
   return (
     <>
       <Nav language={languages[(languageNum + 1) % languages.length].text} setLanguageNum={setLanguageNum} languageNum={languageNum} navigationList={navigationList}></Nav>
+
       <Router>
         <Routes>
           <Route path="/wimhof" element={<Home language={languages[languageNum % languages.length]} setLanguageNum={setLanguageNum} />}>
           </Route>
+          <Route path="/course/:id" element={<CoursePage language={languages[languageNum % languages.length]} setLanguageNum={setLanguageNum} />}>
+          </Route>
         </Routes>
       </Router>
+
       <Footer navigationList={navigationList} language={languages[(languageNum + 1) % languages.length].text} />
     </>
   );

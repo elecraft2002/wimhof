@@ -7,7 +7,7 @@ import admin from "../../assets/svgs/admin.svg"
 
 export default function Nav({ navigationList, languageNum, setLanguageNum, language }) {
 
-  console.log(languageNum)
+  //console.log(languageNum)
 
   const [isNavOpened, handleNavOpen] = useState(false)
   return (

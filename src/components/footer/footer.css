@@ -6,6 +6,11 @@
   flex-direction: column;
   align-items: center;
 }
+
+.footer__container{
+  margin-top: auto;
+}
+
 .footer__wave {
   width: 100%;
   position: absolute;

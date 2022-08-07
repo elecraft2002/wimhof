@@ -5,6 +5,7 @@
   font-weight: 500;
   color: var(--white);
   cursor: pointer;
+  text-decoration: none;
   transition: 0.5s;
 }
 .button:hover {

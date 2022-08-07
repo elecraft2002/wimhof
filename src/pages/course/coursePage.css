@@ -1,0 +1,35 @@
+.wave {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(calc(-100% + 1px));
+}
+.course__page__info {
+  position: relative;
+  background: var(--primary);
+  color: var(--white);
+  max-width: 1200px;
+  padding: 0 calc(50vw - 600px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.course__page__info h2,
+.courses__headding {
+  color: var(--white);
+}
+
+.wave--bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transform: translateY(calc(100% - 3px));
+}
+.info__block{
+  max-width: 500px;
+  margin: 1rem;
+}
