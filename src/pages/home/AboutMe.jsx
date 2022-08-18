@@ -11,7 +11,7 @@ export default function AboutMe() {
         <section className='about'>
             <div className='about__info'>
                 <div>
-                    <Fade top delay={500}><h2>O mně</h2></Fade>
+                    <Fade top delay={500}><h2 id='about'>O mně</h2></Fade>
                     <Fade top delay={500}><img className='about__author__name' src={name} alt="Zuzana Ježková" /></Fade>
                 </div>
                 <Fade top delay={500}>

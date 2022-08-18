@@ -98,8 +98,15 @@
 .change #bar3 {
   transform: translateY(-6px) rotateZ(45deg);
 }
+.nav__logo--mobile {
+  display: none ;
+  visibility: hidden;
+}
 
 @media screen and (max-width: 700px) {
+  .nav__logo--pc {
+    display: none;
+  }
   .menu-bg.change {
     width: 520px;
     height: 560px;
@@ -129,16 +136,35 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  .nav__closer{
+  .nav__closer {
     position: fixed;
     width: 100vw;
     height: 100vh;
     z-index: 999;
   }
+  .nav__logo--mobile {
+    display: block;
+    visibility: visible;
+  }
 }
-@media screen and (min-width: 1200px){
-  .nav{
+@media screen and (min-width: 1200px) {
+  .nav {
     width: 1200px;
     padding: 0 calc(50vw - 600px);
   }
+}
+.nav__logo{
+  height: 1rem;
+  fill: var(--white);
+  stroke: var(--white);
+  
+}
+
+.nav__logo--pc {
+  margin-left: 1rem;
+  height: 1.5rem;
+  margin-right: auto;
+}
+.nav__logo svg {
+  height: 100%;
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import "./course.css"
-import location from "../../assets/svgs/location.svg"
-import info from "../../assets/svgs/info.svg"
+import { ReactComponent as LocationSvg } from "../../assets/svgs/location.svg"
+import { ReactComponent as InfoSvg } from "../../assets/svgs/info.svg"
 import profile from "../../assets/images/Intersection 1.png"
 import Button from '../button/Button'
 import * as prismicH from '@prismicio/helpers';
@@ -22,7 +22,7 @@ export default function Course({ course }) {
                 <div className='course__row'>
                     <div>
                         {date ? <Fade delay={400}><time className='course__date'>{date.toLocaleDateString()}</time></Fade> : null}
-                        {course.data.nadpis[0] ? <Fade delay={500} left><span><img src={info} alt="info" /><h3>{course.data.nadpis[0].text}</h3></span></Fade> : null}
+                        {course.data.nadpis[0] ? <Fade delay={500} left><span style={{ display: "inline-flex", alignItems: "center" }}><InfoSvg /><h3>{course.data.nadpis[0].text}</h3></span></Fade> : null}
                     </div>
                     <Fade right delay={400}>
                         <figure className='course__image__container'>
@@ -30,19 +30,19 @@ export default function Course({ course }) {
                         </figure>
                     </Fade>
                 </div>
-                {course.data.lokace_kurzu ? <Fade left delay={500}><span><img src={location} alt="location" /><h3>{course.data.lokace_kurzu}</h3></span></Fade> : null}
+                {course.data.lokace_kurzu ? <Fade left delay={500}><span style={{ display: "inline-flex", alignItems: "center" }}><LocationSvg /><h3>{course.data.lokace_kurzu}</h3></span></Fade> : null}
                 {course.data.cena_kurzu[0] ? <Fade left delay={500}><p className='course__price'>{parseInt(course.data.cena_kurzu[0].text)} Kč</p></Fade> : null}
             </div>
             <div className='course__bottom'>
                 {date ? <Fade top delay={500}><div className='course__info'>
                     <h4>Začátek</h4>
                     <p>{date.getDate()}. {date.getMonth() + 1}.</p>
-                    <p>{date.getHours()}</p>
+                    <p>{date.getHours() + ':' + date.getMinutes()}</p>
                 </div></Fade> : null}
                 {dateEnd ? <Fade top delay={550}><div className='course__info'>
                     <h4>Konec</h4>
                     <p>{dateEnd.getDate()}. {dateEnd.getMonth() + 1}.</p>
-                    <p>16:00</p>
+                    <p>{dateEnd.getHours() + ':' + dateEnd.getMinutes()}</p>
                 </div> </Fade> : null}
                 {date && dateEnd ? <Fade top delay={600}><div className='course__info'>
                     <h4>Trvání</h4>

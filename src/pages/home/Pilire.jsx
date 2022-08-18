@@ -11,7 +11,7 @@ export default function Pilire() {
         <section className='pilire__container'>
             <img className='pilire__wave' src={topWave} alt="wave" />
             <div className='pilire'>
-                <Fade top delay={300}><h2>3 pilíře wim hofovy metody</h2></Fade>
+                <Fade top delay={300}><h2 id='facts'>3 pilíře wim hofovy metody</h2></Fade>
                 <div className='pilire__list'>
                     <Fade left delay={500}>
                         <div className='pilir'>
