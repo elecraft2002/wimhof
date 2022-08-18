@@ -3,18 +3,34 @@ import React from 'react'
 import Course from '../../components/course/Course'
 import "./courses.css"
 import { Fade } from 'react-reveal'
+import * as prismicH from '@prismicio/helpers';
 
 export default function Courses({ language, data }) {
-    console.log(language)
     const [courses] = useAllPrismicDocumentsByType("kurz", { lang: language.lang })
     console.log(courses)
+    let courseListSorted = courses
+
     if (!courses)
         return null
+    courseListSorted.sort((a, b) => {
+        //console.log(prismicH.asDate(a.data.datum_kurzu).getTime())
+        const dateA = prismicH.asDate(a.data.datum_kurzu).getTime()
+        const dateB = prismicH.asDate(a.data.datum_kurzu).getTime() || 0
+        if (dateA < dateB) {
+            return -1;
+        }
+        if (dateA > dateB) {
+            return 1;
+        }
+
+        // names must be equal
+        return 0;
+    });
     return (
         <div className='courses'>
             <Fade top delay={500}><h2 id='courses' className='courses__headding'>{data.kurzy[0].text}</h2></Fade>
             <ul className='courses__list'>
-                {courses.map((course) => {
+                {courseListSorted.map((course) => {
                     return <Course key={course.id} course={course}></Course>
                 })}
             </ul>

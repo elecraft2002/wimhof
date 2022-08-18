@@ -12,11 +12,11 @@ import { ReactComponent as FoodSvg } from "../../assets/svgs/food-restaurant-ico
 import { ReactComponent as InfoSvg } from "../../assets/svgs/info.svg"
 import { ReactComponent as BagSvg } from "../../assets/svgs/shopping-bag.svg"
 import Button from '../../components/button/Button';
+import { Fade } from 'react-reveal';
 
 
 export default function CoursePage({ language }) {
     const page = usePrismicDocumentByID("YslmPxAAACIAXPpC", { lang: language.lang })
-
 
 
     /*     const center = {
@@ -73,36 +73,47 @@ export default function CoursePage({ language }) {
         return (
             <main>
                 <div className='course__page__top' style={{ backgroundImage: `url(${data.uvodni_fotografie_kurzu.url})` }}>
-                    <div>
-                        <h1>{data.nadpis[0].text}</h1>
-                        {data.datum_kurzu ? (<div className='course__date'><p>{date.getDate()}. {date.getMonth() + 1}.</p>
-                            <p>{date.getHours() + ':' + date.getMinutes()}</p></div>) : null}
-                    </div>
+
+                    <Fade left delay={700}>
+                        <div>
+                            <h1>{data.nadpis[0].text}</h1>
+                            {data.datum_kurzu ? (<div className='course__date'><p>{date.getDate()}. {date.getMonth() + 1}.</p>
+                                <p>{date.getHours() + ':' + date.getMinutes()}</p></div>) : null}
+                        </div>
+                    </Fade>
                 </div>
                 <section className='course__page__info'>
                     <img className='wave' src={topWave} alt="wave" />
                     <div className='course__page__container'   >
-                        <div className='info__block'>
-                            <p className='info__heading'><InfoSvg /><h2>Informace</h2></p>
-                            <PrismicRichText field={data.dlouhy_popis_kurzu} />
-                        </div>
-                        <div className='info__block'>
-                            <p className='info__heading'><BagSvg /><h2>Co s sebou</h2></p>
-                            <PrismicRichText field={data.co_s_sebou} />
-                        </div>
-                        <div className='info__block'>
-                            <p className='info__heading'><FoodSvg /><h2>Jídlo</h2></p>
-                            <PrismicRichText field={data.jidlo} />
-                        </div>
-                        <div className='info__block'>
-                            <p className='info__heading'><LocationSvg /><h2>Lokace</h2></p>
-                            <div>
-                                <p>{data.lokace_kurzu}</p>
-                                <Map center={{ lat: data.presna_lokace_kurzu.latitude || 0, lng: data.presna_lokace_kurzu.longitude || 0 }} />
+                        <Fade left delay={200}>
+                            <div className='info__block'>
+                                <p className='info__heading'><InfoSvg /><h2>{page[0].data.informace[0].text}</h2></p>
+                                <PrismicRichText field={data.dlouhy_popis_kurzu} />
                             </div>
-                        </div>
+                        </Fade>
+                        <Fade left delay={200}>
+                            <div className='info__block'>
+                                <p className='info__heading'><BagSvg /><h2>{page[0].data.co_s_sebou[0].text}</h2></p>
+                                <PrismicRichText field={data.co_s_sebou} />
+                            </div>
+                        </Fade>
+                        <Fade left delay={200}>
+                            <div className='info__block'>
+                                <p className='info__heading'><FoodSvg /><h2>{page[0].data.jidlo[0].text}</h2></p>
+                                <PrismicRichText field={data.jidlo} />
+                            </div>
+                        </Fade>
+                        <Fade left delay={200}>
+                            <div className='info__block'>
+                                <p className='info__heading'><LocationSvg /><h2>{page[0].data.lokace[0].text}</h2></p>
+                                <div>
+                                    <p>{data.lokace_kurzu}</p>
+                                    <Map center={{ lat: data.presna_lokace_kurzu.latitude || 0, lng: data.presna_lokace_kurzu.longitude || 0 }} />
+                                </div>
+                            </div>
+                        </Fade>
                     </div>
-                    <Button style={{ margin: "auto" }} target="_blank" href={data.odkaz_na_formular?.url}>Objednat</Button>
+                    <Button style={{ margin: "auto" }} target="_blank" href={data.odkaz_na_formular?.url}>{page[0].data.objednat_button[0].text}</Button>
                     <img className='wave--bottom' src={downWave} alt="wave" />
                 </section>
 

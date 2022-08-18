@@ -7,9 +7,7 @@ import AboutMe from './AboutMe'
 import { usePrismicDocumentByID } from '@prismicio/react'
 
 export default function Home({ language, url }) {
-    console.log(language)
     const page = usePrismicDocumentByID("YslmPxAAACIAXPpC", { lang: language.lang })
-    console.log(page)
     if (page[1].state === "loaded")
         return (
             <>
