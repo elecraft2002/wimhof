@@ -6,10 +6,10 @@ import instagram from "../../assets/svgs/instagram.svg"
 import admin from "../../assets/svgs/admin.svg"
 import { ReactComponent as Logo } from "../../assets/svgs/wim_icon.svg"
 
-export default function Nav({ navigationList, languageNum, setLanguageNum, language }) {
+export default function Nav({ url, navigationList, languageNum, setLanguageNum, language }) {
 
   //console.log(languageNum)
-  const url = "http://" + window.location.host + "/wimhof"
+ 
   const [isNavOpened, handleNavOpen] = useState(false)
   return (
     <>
@@ -30,8 +30,8 @@ export default function Nav({ navigationList, languageNum, setLanguageNum, langu
           <li className='nav__item' onClick={() => setLanguageNum(languageNum + 1)}><a>{language}</a></li>
         </ul>
         <ul className='nav__list'>
-          <li className='nav__item'><a href=''><img src={facebook} alt="facebook" /></a></li>
-          <li className='nav__item'><a href=''><img src={instagram} alt="instagram" /></a></li>
+          {/* <li className='nav__item'><a href=''><img src={facebook} alt="facebook" /></a></li> */}
+          <li className='nav__item'><a href='https://www.instagram.com/zuzana.jezkova/'><img src={instagram} alt="instagram" /></a></li>
           <li className='nav__item'><a href='https://prismic.io/dashboard/login'><img src={admin} alt="admin" /></a></li>
         </ul>
       </div>

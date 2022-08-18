@@ -6,16 +6,16 @@ import Card from 'react-animated-3d-card'
 import certificate from "../../assets/images/whm_cerftified_instructor_logo_01.png"
 import { Fade } from 'react-reveal'
 
-export default function AboutMe() {
+export default function AboutMe({data}) {
     return (
         <section className='about'>
             <div className='about__info'>
                 <div>
-                    <Fade top delay={500}><h2 id='about'>O mně</h2></Fade>
+                    <Fade top delay={500}><h2 id='about'>{data.o_mne[0].text}</h2></Fade>
                     <Fade top delay={500}><img className='about__author__name' src={name} alt="Zuzana Ježková" /></Fade>
                 </div>
                 <Fade top delay={500}>
-                    <div className='about__text'><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</p></div>
+                    <div className='about__text'><p>{data.o_mne_popis[0].text}</p></div>
                 </Fade>
                 <Fade right delay={500}><img className='about__certificate' src={certificate} alt={certificate} /></Fade>
             </div>

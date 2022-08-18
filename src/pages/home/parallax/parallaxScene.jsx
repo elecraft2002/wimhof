@@ -11,7 +11,7 @@ import Heading from '../Heading'
 import Button from '../../../components/button/Button'
 import Fade from 'react-reveal/Fade';
 
-export default function ParallaxScene() {
+export default function ParallaxScene({ url, data }) {
   const parallaxImage6 = {
     children: <div className='parallax__image__container'><img alt='mountains' style={{ objectPosition: "20%" }} className='parallax__image' src={image6} /></div>,
     translateY: [0, 90],
@@ -47,7 +47,7 @@ export default function ParallaxScene() {
     translateY: [0, 0],
   };
   const parallaxButton = {
-    children: <Fade left delay={500}><div className='parallax__image__container'><Button style={{ bottom: "5vw", left: "50%", position: "absolute", transform: "translate(-50%)" }} >Objednat kurz</Button></div></Fade>
+    children: <Fade left delay={500}><div className='parallax__image__container'><Button href={url + "#courses"} style={{ bottom: "5vw", left: "50%", position: "absolute", transform: "translate(-50%)" }} >{data.objednat_button[0].text}</Button></div></Fade>
     ,
     translateY: [0, -5],
   };

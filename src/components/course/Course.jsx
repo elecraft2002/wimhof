@@ -9,7 +9,7 @@ import { Fade } from 'react-reveal'
 import { usePrismicDocumentByID } from '@prismicio/react'
 
 export default function Course({ course }) {
-    const url = window.location.host
+    const url = window.location.origin
     //console.log(course.data.datum_kurzu)
     const date = course.data.datum_kurzu ? prismicH.asDate(course.data.datum_kurzu) : null
     const dateEnd = course.data.konec_kurzu ? prismicH.asDate(course.data.konec_kurzu) : null
@@ -52,7 +52,7 @@ export default function Course({ course }) {
                     <h4>Lokace</h4>
                     <p>{course.data.lokace_kurzu}</p>
                 </div> </Fade> : null}
-                <Fade delay={700}><Button href={`http://${url}/course/${course.id}`}>Více</Button></Fade>
+                <Fade delay={700}><Button href={`${url}/course/${course.id}`}>Více</Button></Fade>
             </div>
         </div >
     )

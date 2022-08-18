@@ -13,6 +13,7 @@ import Footer from './components/footer/Footer';
 import CoursePage from './pages/course/CoursePage';
 
 function App() {
+  const url = window.location.origin + "/wimhof"
   const languages = [{ lang: "cs-cz", text: "CZ" }, { lang: "en", text: "EN" }]
 
   const [languageNum, setLanguageNum] = useState(0)
@@ -20,13 +21,13 @@ function App() {
   //const [document] = usePrismicDocumentsByType("prispevek")
   return (
     <>
-      <Nav language={languages[(languageNum + 1) % languages.length].text} setLanguageNum={setLanguageNum} languageNum={languageNum} navigationList={navigationList}></Nav>
+      <Nav url={url} language={languages[(languageNum + 1) % languages.length].text} setLanguageNum={setLanguageNum} languageNum={languageNum} navigationList={navigationList}></Nav>
 
       <Router>
         <Routes>
-          <Route path="/wimhof" element={<Home language={languages[languageNum % languages.length]} setLanguageNum={setLanguageNum} />}>
+          <Route path="/wimhof" element={<Home url={url} language={languages[languageNum % languages.length]} setLanguageNum={setLanguageNum} />}>
           </Route>
-          <Route path="/course/:id" element={<CoursePage language={languages[languageNum % languages.length]} setLanguageNum={setLanguageNum} />}>
+          <Route path="/course/:id" element={<CoursePage url={url} language={languages[languageNum % languages.length]} setLanguageNum={setLanguageNum} />}>
           </Route>
         </Routes>
       </Router>
