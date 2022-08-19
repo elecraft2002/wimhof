@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 html{
   scroll-behavior: smooth;
+  scroll-margin-top: -100px;
 }
 body {
   --primary: #12212e;
@@ -9,6 +10,7 @@ body {
   --gray: #e8eded;
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
+  scroll-margin-top: -100px;
 }
 body {
   --primary: #061136;

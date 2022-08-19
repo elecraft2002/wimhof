@@ -10,6 +10,8 @@ export default function NavItem(props) {
         "/gallery/"
     ]
     return (
-        <li className='nav__item'><Link to={props.url + links[props.id]}>{props.children}</Link></li>
+        <li className='nav__item'>
+            {/* <Link to={props.url + links[props.id]}>{props.children}</Link> */}
+        </li>
     )
 }

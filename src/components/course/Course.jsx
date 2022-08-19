@@ -53,7 +53,7 @@ export default function Course({ course }) {
                     <h4>Lokace</h4>
                     <p>{course.data.lokace_kurzu}</p>
                 </div> </Fade> : null}
-                <Fade delay={700}><div style={{ marginLeft: "1em", marginBottom: "1em" }}>{/* <Button href={`${url}/course/${course.id}`}>Více</Button> */}<Link to={"course/" + course.id}>Více</Link></div></Fade>
+                <Fade delay={700}><div style={{ marginLeft: "1em", marginBottom: "1em" }}><Button to={`/course/${course.id}`}>Více</Button></div></Fade>
             </div >
         </div >
     )

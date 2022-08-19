@@ -47,7 +47,7 @@ export default function ParallaxScene({ url, data }) {
     translateY: [0, 0],
   };
   const parallaxButton = {
-    children: <Fade left delay={500}><div className='parallax__image__container'><Button href={url + "#courses"} style={{ bottom: "5vw", left: "50%", position: "absolute", transform: "translate(-50%)" }} >{data.objednat_button[0].text}</Button></div></Fade>
+    children: <Fade left delay={500}><div className='parallax__image__container'><Button to={"/#courses"} style={{ bottom: "5vw", left: "50%", position: "absolute", transform: "translate(-50%)" }} >{data.objednat_button[0].text}</Button></div></Fade>
     ,
     translateY: [0, -5],
   };

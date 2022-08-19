@@ -5,12 +5,12 @@ import facebook from "../../assets/svgs/facebook.svg"
 import instagram from "../../assets/svgs/instagram.svg"
 import admin from "../../assets/svgs/admin.svg"
 import { ReactComponent as Logo } from "../../assets/svgs/wim_icon.svg"
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default function Nav({ url, navigationList, languageNum, setLanguageNum, language }) {
 
   //console.log(languageNum)
- 
+
   const [isNavOpened, handleNavOpen] = useState(false)
   return (
     <>
@@ -26,7 +26,16 @@ export default function Nav({ url, navigationList, languageNum, setLanguageNum, 
         <ul className={`nav__list ${!isNavOpened ? "" : "change"}`}>
           <li className='nav__item'><Link to={url} className='nav__logo--mobile nav__logo'><Logo /></Link></li>
           {navigationList ? navigationList.data.list.map((item, i) => {
-            return <NavItem url={url} key={i} id={i} >{item.cell[0].text}</NavItem>
+            {/* <NavItem url={url} key={i} id={i} >{item.cell[0].text}</NavItem> */ }
+            const links = [
+              "/#about",
+              "/#facts",
+              "/#courses",
+              "/gallery/"
+            ]
+            return (< li className='nav__item' >
+              <Link key={i} to={links[i]}>{item.cell[0].text}</Link>
+            </li>)
           }) : null}
           <li className='nav__item' onClick={() => setLanguageNum(languageNum + 1)}><a>{language}</a></li>
         </ul>

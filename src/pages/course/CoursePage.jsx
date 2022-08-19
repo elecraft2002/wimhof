@@ -11,7 +11,7 @@ import { ReactComponent as LocationSvg } from "../../assets/svgs/location.svg"
 import { ReactComponent as FoodSvg } from "../../assets/svgs/food-restaurant-icon.svg"
 import { ReactComponent as InfoSvg } from "../../assets/svgs/info.svg"
 import { ReactComponent as BagSvg } from "../../assets/svgs/shopping-bag.svg"
-import Button from '../../components/button/Button';
+import ButtonClassic from '../../components/button/ButtonClassic';
 import { Fade } from 'react-reveal';
 
 
@@ -75,7 +75,7 @@ export default function CoursePage({ language }) {
 
                     <Fade left delay={700}>
                         <div>
-                            <h1>{data.nadpis_kurzu[0].text}</h1>
+                            <h1>{data.nadpis_kurzu[0]?.text}</h1>
                             {data.datum_kurzu ? (<div className='course__date'><p>{date.getDate()}. {date.getMonth() + 1}.</p>
                                 <p>{date.getHours() + ':' + date.getMinutes()}</p></div>) : null}
                         </div>
@@ -112,7 +112,7 @@ export default function CoursePage({ language }) {
                             </div>
                         </Fade>
                     </div>
-                    <Button style={{ margin: "auto" }} target="_blank" href={data.odkaz_na_formular?.url}>{page[0].data.objednat_button[0].text}</Button>
+                    <ButtonClassic style={{ margin: "auto" }} target="_blank" href={data.odkaz_na_formular?.url}>{page[0].data.objednat_button[0].text}</ButtonClassic>
                     <img className='wave--bottom' src={downWave} alt="wave" />
                 </section>
 
