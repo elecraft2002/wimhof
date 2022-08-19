@@ -5,6 +5,7 @@ import facebook from "../../assets/svgs/facebook.svg"
 import instagram from "../../assets/svgs/instagram.svg"
 import admin from "../../assets/svgs/admin.svg"
 import { ReactComponent as Logo } from "../../assets/svgs/wim_icon.svg"
+import { Link } from "react-router-dom";
 
 export default function Nav({ url, navigationList, languageNum, setLanguageNum, language }) {
 
@@ -21,18 +22,18 @@ export default function Nav({ url, navigationList, languageNum, setLanguageNum, 
           <div id="bar2" className="bar"></div>
           <div id="bar3" className="bar"></div>
         </div>
-        <a href={url} className='nav__item nav__logo nav__logo--pc'><Logo /></a>
+        <Link to={"/"} className='nav__item nav__logo nav__logo--pc'><Logo /></Link>
         <ul className={`nav__list ${!isNavOpened ? "" : "change"}`}>
-          <li className='nav__item'><a href={url} className='nav__logo--mobile nav__logo'><Logo /></a></li>
+          <li className='nav__item'><Link to={url} className='nav__logo--mobile nav__logo'><Logo /></Link></li>
           {navigationList ? navigationList.data.list.map((item, i) => {
             return <NavItem url={url} key={i} id={i} >{item.cell[0].text}</NavItem>
           }) : null}
           <li className='nav__item' onClick={() => setLanguageNum(languageNum + 1)}><a>{language}</a></li>
         </ul>
         <ul className='nav__list'>
-          {/* <li className='nav__item'><a href=''><img src={facebook} alt="facebook" /></a></li> */}
-          <li className='nav__item'><a href='https://www.instagram.com/zuzana.jezkova/'><img src={instagram} alt="instagram" /></a></li>
-          <li className='nav__item'><a href='https://prismic.io/dashboard/login'><img src={admin} alt="admin" /></a></li>
+          {/* <li className='nav__item'><Link to=''><img src={facebook} alt="facebook" /></Link></li> */}
+          <li className='nav__item'><Link to='https://www.instagram.com/zuzana.jezkova/'><img src={instagram} alt="instagram" /></Link></li>
+          <li className='nav__item'><Link to='https://prismic.io/dashboard/login'><img src={admin} alt="admin" /></Link></li>
         </ul>
       </div>
     </>

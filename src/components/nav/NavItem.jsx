@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 export default function NavItem(props) {
     //console.log(props)
@@ -9,6 +10,6 @@ export default function NavItem(props) {
         "/gallery/"
     ]
     return (
-        <li className='nav__item'><a href={props.url + links[props.id]}>{props.children}</a></li>
+        <li className='nav__item'><Link to={props.url + links[props.id]}>{props.children}</Link></li>
     )
 }

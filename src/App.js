@@ -22,9 +22,9 @@ function App() {
   //const [document] = usePrismicDocumentsByType("prispevek")
   return (
     <>
-      <Nav url={url} language={languages[(languageNum + 1) % languages.length].text} setLanguageNum={setLanguageNum} languageNum={languageNum} navigationList={navigationList}></Nav>
 
       <Router>
+        <Nav url={url} language={languages[(languageNum + 1) % languages.length].text} setLanguageNum={setLanguageNum} languageNum={languageNum} navigationList={navigationList}></Nav>
         <Routes>
           <Route path="/" element={<Home url={url} language={languages[languageNum % languages.length]} setLanguageNum={setLanguageNum} />}>
           </Route>
