@@ -68,7 +68,6 @@ export default function CoursePage({ language }) {
 
 
     const date = data && data.datum_kurzu ? prismicH.asDate(data.datum_kurzu) : null
-
     if (course[1].state == 'loaded' && page[1].state == 'loaded')
         return (
             <main>

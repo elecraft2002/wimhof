@@ -14,7 +14,7 @@ export default function Course({ course }) {
     const date = course.data.datum_kurzu ? prismicH.asDate(course.data.datum_kurzu) : null
     const dateEnd = course.data.konec_kurzu ? prismicH.asDate(course.data.konec_kurzu) : null
 
-    //console.log(date)
+    //console.log(date.toLocaleDateString())
 
     return (
         <div className='course'>
@@ -22,7 +22,7 @@ export default function Course({ course }) {
                 <div className='course__row'>
                     <div>
                         {date ? <Fade delay={400}><time className='course__date'>{date.toLocaleDateString()}</time></Fade> : null}
-                        {course.data.nadpis[0] ? <Fade delay={500} left><span style={{ display: "inline-flex", alignItems: "center" }}><InfoSvg /><h3>{course.data.nadpis[0].text}</h3></span></Fade> : null}
+                        {course.data.nadpis_kurzu[0] ? <Fade delay={500} left><span style={{ display: "inline-flex", alignItems: "center" }}><InfoSvg /><h3>{course.data.nadpis_kurzu[0].text}</h3></span></Fade> : null}
                     </div>
                     <Fade right delay={400}>
                         <figure className='course__image__container'>

@@ -13,7 +13,7 @@ import Footer from './components/footer/Footer';
 import CoursePage from './pages/course/CoursePage';
 
 function App() {
-  const url = window.location.origin + "/wimhof"
+  const url = window.location.origin
   const languages = [{ lang: "cs-cz", text: "CZ" }, { lang: "en", text: "EN" }]
 
   const [languageNum, setLanguageNum] = useState(0)
@@ -25,7 +25,7 @@ function App() {
 
       <Router>
         <Routes>
-          <Route path="/wimhof" element={<Home url={url} language={languages[languageNum % languages.length]} setLanguageNum={setLanguageNum} />}>
+          <Route path="/" element={<Home url={url} language={languages[languageNum % languages.length]} setLanguageNum={setLanguageNum} />}>
           </Route>
           <Route path="/course/:id" element={<CoursePage url={url} language={languages[languageNum % languages.length]} setLanguageNum={setLanguageNum} />}>
           </Route>
