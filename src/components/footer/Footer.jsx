@@ -7,7 +7,6 @@ import NavItem from '../nav/NavItem'
 import certificate from "../../assets/images/whm_cerftified_instructor_logo_02.png"
 
 export default function Footer(props) {
-    console.log(props.navigationList)
     return (
         <footer className='footer__container'>
             <div className='footer'>

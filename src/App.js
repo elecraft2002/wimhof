@@ -11,6 +11,7 @@ import { useSinglePrismicDocument } from '@prismicio/react'
 import { useState } from 'react';
 import Footer from './components/footer/Footer';
 import CoursePage from './pages/course/CoursePage';
+import Gallery from './pages/gallery/Gallery';
 
 function App() {
   const url = window.location.origin
@@ -28,6 +29,8 @@ function App() {
           <Route path="/" element={<Home url={url} language={languages[languageNum % languages.length]} setLanguageNum={setLanguageNum} />}>
           </Route>
           <Route path="/course/:id" element={<CoursePage url={url} language={languages[languageNum % languages.length]} setLanguageNum={setLanguageNum} />}>
+          </Route>
+          <Route path="/gallery" element={<Gallery url={url} language={languages[languageNum % languages.length]} setLanguageNum={setLanguageNum} />}>
           </Route>
         </Routes>
       </Router>
