@@ -7,7 +7,6 @@ import * as prismicH from '@prismicio/helpers';
 
 export default function Courses({ language, data }) {
     const [courses] = useAllPrismicDocumentsByType("kurz", { lang: language.lang })
-    console.log(courses)
     let courseListSorted = courses
 
     if (!courses)

@@ -6,11 +6,8 @@ import profile from "../../assets/images/Intersection 1.png"
 import Button from '../button/Button'
 import * as prismicH from '@prismicio/helpers';
 import { Fade } from 'react-reveal'
-import { usePrismicDocumentByID } from '@prismicio/react'
-import { Link } from "react-router-dom";
 
 export default function Course({ course }) {
-    const url = window.location.origin
     //console.log(course.data.datum_kurzu)
     const date = course.data.datum_kurzu ? prismicH.asDate(course.data.datum_kurzu) : null
     const dateEnd = course.data.konec_kurzu ? prismicH.asDate(course.data.konec_kurzu) : null

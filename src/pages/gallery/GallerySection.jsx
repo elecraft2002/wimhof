@@ -6,8 +6,6 @@ import { LightgalleryProvider } from "react-lightgallery";
 import "lightgallery.js/dist/css/lightgallery.css";
 
 export default function GallerySection({ section }) {
-    console.log(section)
-
     return (
         <Fade >
             <section className='gallery__section'>
