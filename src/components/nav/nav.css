@@ -99,7 +99,7 @@
   transform: translateY(-6px) rotateZ(45deg);
 }
 .nav__logo--mobile {
-  display: none ;
+  display: none;
   visibility: hidden;
 }
 
@@ -146,6 +146,9 @@
     display: block;
     visibility: visible;
   }
+  .nav__item a {
+    color: var(--white);
+  }
 }
 @media screen and (min-width: 1200px) {
   .nav {
@@ -153,11 +156,10 @@
     padding: 0 calc(50vw - 600px);
   }
 }
-.nav__logo{
+.nav__logo {
   height: 1rem;
   fill: var(--white);
   stroke: var(--white);
-  
 }
 
 .nav__logo--pc {

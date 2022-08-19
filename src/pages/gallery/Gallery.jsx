@@ -1,5 +1,6 @@
 import { usePrismicDocumentsByType } from '@prismicio/react'
 import React from 'react'
+import { Fade } from 'react-reveal'
 import "./gallery.css"
 import GallerySection from './GallerySection'
 
@@ -8,7 +9,7 @@ export default function Gallery() {
     return (
         <div className='gallery'>
             <div>
-                <h2 className='gallery__heading'>Galerie</h2>
+                <Fade left><h2 className='gallery__heading'>Galerie</h2></Fade>
             </div>
             <div >
                 {gallery[1].state == "loaded" ? gallery[0].results.map((section, i) => {
