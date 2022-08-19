@@ -7,6 +7,7 @@ import Button from '../button/Button'
 import * as prismicH from '@prismicio/helpers';
 import { Fade } from 'react-reveal'
 import { usePrismicDocumentByID } from '@prismicio/react'
+import { Link } from "react-router-dom";
 
 export default function Course({ course }) {
     const url = window.location.origin
@@ -52,8 +53,8 @@ export default function Course({ course }) {
                     <h4>Lokace</h4>
                     <p>{course.data.lokace_kurzu}</p>
                 </div> </Fade> : null}
-                <Fade delay={700}><div style={{ marginLeft: "1em",marginBottom:"1em" }}><Button href={`${url}/course/${course.id}`}>Více</Button></div></Fade>
-            </div>
+                <Fade delay={700}><div style={{ marginLeft: "1em", marginBottom: "1em" }}>{/* <Button href={`${url}/course/${course.id}`}>Více</Button> */}<Link to={"course/" + course.id}>Více</Link></div></Fade>
+            </div >
         </div >
     )
 }
