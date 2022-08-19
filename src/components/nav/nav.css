@@ -166,6 +166,8 @@
   margin-left: 1rem;
   height: 1.5rem;
   margin-right: auto;
+  fill: var(--primary);
+  stroke: var(--primary);
 }
 .nav__logo svg {
   height: 100%;
