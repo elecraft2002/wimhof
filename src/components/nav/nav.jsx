@@ -33,8 +33,8 @@ export default function Nav({ url, navigationList, languageNum, setLanguageNum, 
               "/#courses",
               "/gallery/"
             ]
-            return (< li className='nav__item' >
-              <Link key={i} to={links[i]}>{item.cell[0].text}</Link>
+            return (< li key={i} className='nav__item' >
+              <Link to={links[i]}>{item.cell[0].text}</Link>
             </li>)
           }) : null}
           <li className='nav__item' onClick={() => setLanguageNum(languageNum + 1)}><a>{language}</a></li>
