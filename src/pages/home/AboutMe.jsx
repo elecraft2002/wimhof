@@ -23,7 +23,7 @@ export default function AboutMe({ data }) {
             <div className='about__image'>
                 <Fade right delay={500}>
                     <figure className='about__image__container'>
-                        <img src={photo} alt="Zuzana Ježková" />
+                        <img src={data.o_mne_fotka.url || photo} alt="Zuzana Ježková" />
                     </figure>
                 </Fade>
             </div>
