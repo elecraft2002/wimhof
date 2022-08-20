@@ -8,7 +8,7 @@ import * as prismicH from '@prismicio/helpers';
 import { Fade } from 'react-reveal'
 
 export default function Course({ course }) {
-    //console.log(course.data.datum_kurzu)
+    //console.log(course.data.profilova_fotografie)
     const date = course.data.datum_kurzu ? prismicH.asDate(course.data.datum_kurzu) : null
     const dateEnd = course.data.konec_kurzu ? prismicH.asDate(course.data.konec_kurzu) : null
 
@@ -24,7 +24,7 @@ export default function Course({ course }) {
                     </div>
                     <Fade right delay={400}>
                         <figure className='course__image__container'>
-                            <img src={profile} alt="profile picture" />
+                            <img src={course.data.profilova_fotografie.url || profile} alt="profile picture" />
                         </figure>
                     </Fade>
                 </div>
