@@ -35,17 +35,17 @@ export default function Course({ course }) {
                 {date ? <Fade top delay={500}><div className='course__info'>
                     <h4>Začátek</h4>
                     <p>{date.getDate()}. {date.getMonth() + 1}.</p>
-                    <p>{date.getHours() + ':' + date.getMinutes()}</p>
+                    <p>{date.getMinutes() < 10 ? date.getHours() + ':' + "0" + date.getMinutes() : date.getHours() + ':' + date.getMinutes()}</p>
                 </div></Fade> : null}
                 {dateEnd ? <Fade top delay={550}><div className='course__info'>
                     <h4>Konec</h4>
                     <p>{dateEnd.getDate()}. {dateEnd.getMonth() + 1}.</p>
-                    <p>{dateEnd.getHours() + ':' + dateEnd.getMinutes()}</p>
+                    <p>{dateEnd.getMinutes() < 10 ? dateEnd.getHours() + ':' + "0" + dateEnd.getMinutes() : dateEnd.getHours() + ':' + dateEnd.getMinutes()}</p>
                 </div> </Fade> : null}
-                {date && dateEnd ? <Fade top delay={600}><div className='course__info'>
+                {/* {date && dateEnd ? <Fade top delay={600}><div className='course__info'>
                     <h4>Trvání</h4>
                     <p>6h</p>
-                </div> </Fade> : null}
+                </div> </Fade> : null} */}
                 {course.data.lokace_kurzu ? <Fade top delay={650}><div className='course__info'>
                     <h4>Lokace</h4>
                     <p>{course.data.lokace_kurzu}</p>
