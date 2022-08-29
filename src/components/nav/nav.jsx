@@ -29,9 +29,9 @@ export default function Nav({ url, navigationList, languageNum, setLanguageNum, 
             {/* <NavItem url={url} key={i} id={i} >{item.cell[0].text}</NavItem> */ }
             const links = [
               "/#about",
-              "/#facts",
               "/#courses",
-              "/gallery/"
+              "/gallery/",
+              "/literatura/"
             ]
             return (< li key={i} className='nav__item' >
               <Link to={links[i]}>{item.cell[0].text}</Link>
@@ -41,8 +41,8 @@ export default function Nav({ url, navigationList, languageNum, setLanguageNum, 
         </ul>
         <ul className='nav__list'>
           {/* <li className='nav__item'><Link to=''><img src={facebook} alt="facebook" /></Link></li> */}
-          <li className='nav__item'><Link to='https://www.instagram.com/zuzana.jezkova/'><img src={instagram} alt="instagram" /></Link></li>
-          <li className='nav__item'><Link to='https://prismic.io/dashboard/login'><img src={admin} alt="admin" /></Link></li>
+          <li className='nav__item'><a href='https://www.instagram.com/zuzana.jezkova/'><img src={instagram} alt="instagram" /></a></li>
+          <li className='nav__item'><a href='https://prismic.io/dashboard/login'><img src={admin} alt="admin" /></a></li>
         </ul>
       </div>
     </>
