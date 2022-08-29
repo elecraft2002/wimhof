@@ -29,9 +29,9 @@ export default function Nav({ url, navigationList, languageNum, setLanguageNum, 
             {/* <NavItem url={url} key={i} id={i} >{item.cell[0].text}</NavItem> */ }
             const links = [
               "/#about",
+              "/literatura/",
               "/#courses",
               "/gallery/",
-              "/literatura/"
             ]
             return (< li key={i} className='nav__item' >
               <Link to={links[i]}>{item.cell[0].text}</Link>
