@@ -84,3 +84,10 @@
   font-size: 2rem;
   margin: 0;
 }
+.course__page__heading{
+  color: var(--white);
+  filter: drop-shadow(0 0 5px black);
+}
+.course__date {
+  filter: drop-shadow(0 0 5px black);
+}

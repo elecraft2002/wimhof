@@ -75,9 +75,9 @@ export default function CoursePage({ language }) {
 
                     <Fade left delay={700}>
                         <div>
-                            <h1>{data.nadpis_kurzu[0]?.text}</h1>
+                            <h1 className='course__page__heading'>{data.nadpis_kurzu[0]?.text}</h1>
                             {data.datum_kurzu ? (<div className='course__date'><p>{date.getDate()}. {date.getMonth() + 1}.</p>
-                                <p>{date.getHours() + ':' + date.getMinutes()}</p></div>) : null}
+                                <p>{date.getMinutes() < 10 ? date.getHours() + ':' + "0" + date.getMinutes() : date.getHours() + ':' + date.getMinutes()}</p></div>) : null}
                         </div>
                     </Fade>
                 </div>
