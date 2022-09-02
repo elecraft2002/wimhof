@@ -13,6 +13,7 @@ import Footer from './components/footer/Footer';
 import CoursePage from './pages/course/CoursePage';
 import Gallery from './pages/gallery/Gallery';
 import Literatura from './pages/literatura/literatura';
+import InfoPage from './pages/info/InfoPage';
 
 function App() {
   const url = window.location.origin
@@ -34,6 +35,8 @@ function App() {
           <Route path="/gallery" element={<Gallery url={url} language={languages[languageNum % languages.length]} setLanguageNum={setLanguageNum} />}>
           </Route>
           <Route path="/literatura" element={<Literatura url={url} language={languages[languageNum % languages.length]} setLanguageNum={setLanguageNum} />}>
+          </Route>
+          <Route path="/info" element={<InfoPage language={languages[languageNum % languages.length]} setLanguageNum={setLanguageNum} />}>
           </Route>
         </Routes>
       </Router>

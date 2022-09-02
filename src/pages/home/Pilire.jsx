@@ -6,7 +6,8 @@ import breathing from "../../assets/images/pilire/breathing-with-wim-hof-method.
 import cold from "../../assets/images/pilire/cold-therapy-wim-hof-method.png"
 import commitment from "../../assets/images/pilire/commitment-with-wim-hof-method.png"
 import { Fade } from 'react-reveal'
-export default function Pilire({data}) {
+import Button from '../../components/button/Button'
+export default function Pilire({ data }) {
     return (
         <section className='pilire__container'>
             <img className='pilire__wave' src={topWave} alt="wave" />
@@ -19,7 +20,7 @@ export default function Pilire({data}) {
                             <p>
                                 <h3>{data.odhodlani[0].text}</h3>
                                 {data.odhodlani_popis[0].text}
-                                </p>
+                            </p>
                         </div>
                     </Fade>
                     <Fade left delay={700}>
@@ -36,10 +37,13 @@ export default function Pilire({data}) {
                             <p>
                                 <h3>{data.terapie_chladem[0].text}</h3>
                                 {data.terapie_chladem_popis[0].text}
-                                </p>
+                            </p>
                         </div>
                     </Fade>
                 </div>
+                <Fade left delay={100}>
+                    <div className={"infoButton"}><Button to={"/info"}>Více</Button></div>
+                </Fade>
             </div>
             <img className='pilire__wave--bottom' src={downWave} alt="wave" />
         </section>

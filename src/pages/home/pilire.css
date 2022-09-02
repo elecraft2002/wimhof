@@ -9,13 +9,12 @@
   transform: translateY(calc(-100% + 1px));
 }
 
-.pilire__wave--bottom{
+.pilire__wave--bottom {
   width: 100%;
   position: absolute;
   bottom: 0;
   z-index: -1;
   transform: translateY(calc(100% - 3px));
-
 }
 
 .pilire__container {
@@ -55,24 +54,28 @@
 
 .pilir p {
   font-weight: 200;
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
   border-bottom: 2px solid var(--secondary);
 }
 @keyframes levitate {
-  0%{
+  0% {
     transform: translateY(0px);
   }
-  50%{
+  50% {
     transform: translateY(10px);
   }
-  100%{
+  100% {
     transform: translateY(0px);
   }
 }
 
-@media screen and (min-width:1200px) {
-  .pilire__list{
+@media screen and (min-width: 1200px) {
+  .pilire__list {
     padding-left: calc(50vw - 600px);
     padding-right: calc(50vw - 600px);
   }
+}
+.infoButton {
+  text-align: center;
+  margin: 1em;
 }

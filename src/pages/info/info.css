@@ -1,0 +1,31 @@
+.infoContainer {
+  padding-top: 100px;
+  background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0.8) 10%,
+        rgb(255, 255, 255)
+      )
+      center bottom / cover,
+    url(../../assets/images/mountains.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: auto;
+  padding-left: calc(50vw - 600px);
+  padding-right: calc(50vw - 600px);
+  color: var(--primary);
+}
+.infoBlock {
+  margin: 1rem;
+}
+
+.infoContainer h1,
+.infoContainer h2,
+.infoContainer h3,
+.infoContainer h4,
+.infoContainer h5,
+.infoContainer h6 {
+  text-align: center;
+  color: var(--primary);
+}
