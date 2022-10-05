@@ -41,6 +41,7 @@ export default function Nav({ url, navigationList, languageNum, setLanguageNum, 
         </ul>
         <ul className='nav__list'>
           {/* <li className='nav__item'><Link to=''><img src={facebook} alt="facebook" /></Link></li> */}
+          <li className='nav__item'><a href='https://www.facebook.com/zuzana.kostohryzova'><img src={facebook} alt="instagram" /></a></li>
           <li className='nav__item'><a href='https://www.instagram.com/zuzana.jezkova/'><img src={instagram} alt="instagram" /></a></li>
           <li className='nav__item'><a href='https://prismic.io/dashboard/login'><img src={admin} alt="admin" /></a></li>
         </ul>

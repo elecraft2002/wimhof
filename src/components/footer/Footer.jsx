@@ -15,8 +15,8 @@ export default function Footer(props) {
                     <div className='footer__block'>
                         <h3>Sociální sítě</h3>
                         <div className='footer__socials'>
-                            <a href=''><img src={facebook} alt="facebook" /></a>
-                            <a href=''><img src={instagram} alt="instagram" /></a>
+                            <a href='https://www.facebook.com/zuzana.kostohryzova'><img src={facebook} alt="facebook" /></a>
+                            <a href='https://www.instagram.com/zuzana.jezkova/'><img src={instagram} alt="instagram" /></a>
                         </div>
                     </div>
                     <div className='footer__block'>
