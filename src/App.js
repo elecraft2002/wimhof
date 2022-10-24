@@ -15,6 +15,10 @@ import Gallery from './pages/gallery/Gallery';
 import Literatura from './pages/literatura/literatura';
 import InfoPage from './pages/info/InfoPage';
 
+import ReactGA from 'react-ga';
+const TRACKING_ID = "G-LCZ3QEF85Y"; // OUR_TRACKING_ID
+ReactGA.initialize(TRACKING_ID);
+
 function App() {
   const url = window.location.origin
   const languages = [{ lang: "cs-cz", text: "CZ" }, { lang: "en", text: "EN" }]
