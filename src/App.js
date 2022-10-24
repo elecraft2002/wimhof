@@ -14,6 +14,7 @@ import CoursePage from './pages/course/CoursePage';
 import Gallery from './pages/gallery/Gallery';
 import Literatura from './pages/literatura/literatura';
 import InfoPage from './pages/info/InfoPage';
+import CookieConsent, { Cookies } from "react-cookie-consent";
 
 import ReactGA from 'react-ga';
 const TRACKING_ID = "G-LCZ3QEF85Y"; // OUR_TRACKING_ID
@@ -44,7 +45,16 @@ function App() {
           </Route>
         </Routes>
       </Router>
-
+      <CookieConsent
+        location="bottom"
+        buttonText="Souhlasím"
+        cookieName="consent"
+        style={{ background: "var(--primary)" }}
+        buttonStyle={{ color: "var(--secondary)", fontSize: "1rem" }}
+        expires={150}
+      >
+        Tento web používá soubory cookie.
+        </CookieConsent>
       <Footer navigationList={navigationList} language={languages[(languageNum + 1) % languages.length].text} />
     </>
   );
