@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bb186c3e.css",
-    "main.js": "/static/js/main.2d15dd00.js",
+    "main.js": "/static/js/main.a34657c4.js",
     "static/js/787.a658a1a1.chunk.js": "/static/js/787.a658a1a1.chunk.js",
     "static/media/Image 1.png": "/static/media/Image 1.b993e437689949dea09f.png",
     "static/media/parallax-2.png": "/static/media/parallax-2.2613dadbc7984cb26508.png",
@@ -9,6 +9,7 @@
     "static/media/whm_cerftified_instructor_logo_01.png": "/static/media/whm_cerftified_instructor_logo_01.8e2361803e8e45bbe286.png",
     "static/media/whm_cerftified_instructor_logo_02.png": "/static/media/whm_cerftified_instructor_logo_02.620f585cf3a1752cb096.png",
     "static/media/parallax-1.png": "/static/media/parallax-1.fe3075242069d1ed80ba.png",
+    "static/media/samolepka.png": "/static/media/samolepka.49c1a8471623912cae76.png",
     "static/media/parallax-6.png": "/static/media/parallax-6.c7b8f62fb11ec8c472da.png",
     "static/media/parallax-5.png": "/static/media/parallax-5.a9a0b87fea3fca142513.png",
     "static/media/mountains.jpg": "/static/media/mountains.97ddb883e301770b4b85.jpg",
@@ -37,11 +38,11 @@
     "static/media/wave_down.svg": "/static/media/wave_down.7b7500bc68a7b9e32f68f412ef53d0b2.svg",
     "static/media/name.svg": "/static/media/name.9d7c20352277150fb39694af63266cda.svg",
     "main.bb186c3e.css.map": "/static/css/main.bb186c3e.css.map",
-    "main.2d15dd00.js.map": "/static/js/main.2d15dd00.js.map",
+    "main.a34657c4.js.map": "/static/js/main.a34657c4.js.map",
     "787.a658a1a1.chunk.js.map": "/static/js/787.a658a1a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb186c3e.css",
-    "static/js/main.2d15dd00.js"
+    "static/js/main.a34657c4.js"
   ]
 }
