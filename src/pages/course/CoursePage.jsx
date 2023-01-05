@@ -112,9 +112,9 @@ export default function CoursePage({ language }) {
                 <PrismicRichText field={data.dlouhy_popis_kurzu} />
               </div>
             </Fade>
-            <Fade left delay={200}>
+            {/* <Fade left delay={200}>
               <img src={samolepka} />
-            </Fade>
+            </Fade> */}
             <Fade left delay={200}>
               <div className="info__block">
                 <p className="info__heading">
