@@ -42,7 +42,7 @@ export default function Footer(props) {
                 <div>
                     <img className='footer__cerfiticate' src={certificate} alt="certificate" />
                     <div className='footer__line'></div>
-                    <p className='footer__autor'><a href='https://www.instagram.com/vojtik_suchanek/' >2022 Vojtík Suchánek</a></p>
+                    <p className='footer__autor'><a href='https://www.vojtechsuchanek.cz/cs-cz' >2022 Vojtík Suchánek</a></p>
                 </div>
             </div>
         </footer>
