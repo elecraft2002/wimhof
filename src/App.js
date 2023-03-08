@@ -22,7 +22,7 @@ ReactGA.initialize(TRACKING_ID);
 
 function App() {
   const url = window.location.origin
-  const languages = [{ lang: "cs-cz", text: "CZ" }, { lang: "en", text: "EN" }]
+  const languages = [{ lang: "cs-cz", text: "CZ" }, { lang: "en-eu", text: "EN" }]
 
   const [languageNum, setLanguageNum] = useState(0)
   const [navigationList] = useSinglePrismicDocument("navigation", { lang: languages[languageNum % languages.length].lang })
