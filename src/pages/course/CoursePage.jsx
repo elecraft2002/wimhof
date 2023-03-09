@@ -1,4 +1,4 @@
-import { PrismicRichText, usePrismicDocumentByID } from "@prismicio/react";
+import { PrismicRichText, usePrismicDocumentByID, useSinglePrismicDocument } from "@prismicio/react";
 import React from "react";
 import { useParams } from "react-router";
 import * as prismicH from "@prismicio/helpers";
@@ -16,7 +16,10 @@ import ButtonClassic from "../../components/button/ButtonClassic";
 import { Fade } from "react-reveal";
 
 export default function CoursePage({ language }) {
-  const page = usePrismicDocumentByID("YslmPxAAACIAXPpC", {
+  // const page = usePrismicDocumentByID("YslmPxAAACIAXPpC", {
+  //   lang: language.lang,
+  // });
+  const page = useSinglePrismicDocument("landing_page", {
     lang: language.lang,
   });
 
@@ -64,9 +67,11 @@ export default function CoursePage({ language }) {
       <></>
     );
   }
-
+console.log(page)
   const { id } = useParams();
-  const course = usePrismicDocumentByID(id);
+  const course = usePrismicDocumentByID(id, {
+    lang: language.lang,
+  });
   const data = course[0]?.data;
 
   const date =

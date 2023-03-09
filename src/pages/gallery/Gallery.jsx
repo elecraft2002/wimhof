@@ -5,11 +5,11 @@ import { Fade } from "react-reveal";
 import "./gallery.css";
 import GallerySection from "./GallerySection";
 
-export default function Gallery() {
-  let gallery = usePrismicDocumentsByType("galerie");
-  gallery[0]?.results.map((section, i) => {
-    console.log(section.data.nadpis[0].text);
-  });
+export default function Gallery({ language }) {
+  let gallery = usePrismicDocumentsByType("galerie", { lang: language.lang });
+  // gallery[0]?.results.map((section, i) => {
+  //   console.log(section.data.nadpis[0].text);
+  // });
   gallery[0]?.results.sort((a, b) => {
     const dateA = a.data.popis[0].text
       .replaceAll(".", "")
@@ -29,13 +29,13 @@ export default function Gallery() {
       })
       .reverse()
       .join("");
-    console.log(dateA - dateB);
+    // console.log(dateA - dateB);
     return dateB - dateA;
   });
-  console.log("------------");
-  gallery[0]?.results.map((section, i) => {
-    console.log(section.data.nadpis[0].text);
-  });
+  // console.log("------------");
+  // gallery[0]?.results.map((section, i) => {
+  //   console.log(section.data.nadpis[0].text);
+  // });
   return (
     <div className="gallery">
       <div>
@@ -46,7 +46,7 @@ export default function Gallery() {
       <div>
         {gallery[1].state == "loaded"
           ? gallery[0]?.results.map((section, i) => {
-              console.log(section.data);
+              // console.log(section.data);
 
               return <GallerySection key={i} section={section} />;
             })

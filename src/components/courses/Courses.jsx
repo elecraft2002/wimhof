@@ -34,7 +34,7 @@ export default function Courses({ language, data }) {
         {courseListSorted.map((course) => {
           //console.log(course)
           if (prismicH.asDate(course.data.datum_kurzu)?.getTime() > Date.now())
-            return <Course key={course.id} course={course}></Course>;
+            return <Course language={language} key={course.id} course={course}></Course>;
           return null;
         })}
       </ul>
