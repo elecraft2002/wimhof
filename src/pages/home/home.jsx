@@ -21,7 +21,7 @@ export default function Home({ language, url }) {
   if (page[1].state === "loaded")
     return (
       <>
-        <ParallaxScene data={page[0].results[0].data} url={url} />
+        <ParallaxScene data={page[0].results[0].data} url={url} language={language} />
         <Courses data={page[0].results[0].data} language={language} />
         <Pilire data={page[0].results[0].data} />
         <AboutMe data={page[0].results[0].data} />

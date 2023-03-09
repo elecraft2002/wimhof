@@ -11,7 +11,7 @@ import Heading from '../Heading'
 import Button from '../../../components/button/Button'
 import Fade from 'react-reveal/Fade';
 
-export default function ParallaxScene({ url, data }) {
+export default function ParallaxScene({ url, data,language }) {
   const parallaxImage6 = {
     children: <div className='parallax__image__container'><img alt='mountains' style={{ objectPosition: "20%" }} className='parallax__image' src={image6} /></div>,
     translateY: [0, 90],
@@ -32,7 +32,7 @@ export default function ParallaxScene({ url, data }) {
     translateY: [6, 60],
   };
   const parallaxHeading = {
-    children: <div className='parallax__image__container'><Heading /></div>
+    children: <div className='parallax__image__container'><Heading  language={language}/></div>
     ,
     translateY: [0, 90],
   };
