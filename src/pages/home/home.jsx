@@ -5,7 +5,6 @@ import Pilire from "./Pilire";
 import Recenze from "./Recenze";
 import AboutMe from "./AboutMe";
 import {
-  usePrismicDocumentByID,   
   usePrismicDocumentsByTag,
 } from "@prismicio/react";
 
