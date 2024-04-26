@@ -2,7 +2,7 @@ import "./App.css";
 import "normalize.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Nav from "./components/nav/nav";
-// import Home from "./pages/home/Home";
+import Home from "./pages/home/Home";
 import { useSinglePrismicDocument } from "@prismicio/react";
 import { useState } from "react";
 import Footer from "./components/footer/Footer";
@@ -36,18 +36,19 @@ function App() {
           url={url}
           language={languages[(languageNum + 1) % languages.length].text}
           setLanguageNum={setLanguageNum}
-          languageNum={languageNum}
+          languageNum={languageNum} 
           navigationList={navigationList}
         ></Nav>
         <Routes>
           <Route
             path="/"
-            /* <Home
-              url={url}
-              language={languages[languageNum % languages.length]}
-              setLanguageNum={setLanguageNum}
-            /> */
-            element={<h1>Home</h1>}
+            element={
+              <Home
+                url={url}
+                language={languages[languageNum % languages.length]}
+                setLanguageNum={setLanguageNum}
+              />
+            }
           ></Route>
           <Route
             path="/course/:id"
