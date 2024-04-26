@@ -3,6 +3,7 @@ import "normalize.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Nav from "./components/nav/nav";
 import Home from "./pages/home/Home";
+// import Home from "./pages/home/Home";
 import { useSinglePrismicDocument } from "@prismicio/react";
 import { useState } from "react";
 import Footer from "./components/footer/Footer";

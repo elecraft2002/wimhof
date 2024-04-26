@@ -27,5 +27,5 @@ export default function Home({ language, url }) {
         <Recenze data={page[0].results[0].data} language={language} />
       </>
     );
-  return null;
+  return <></>;
 }
