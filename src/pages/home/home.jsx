@@ -1,5 +1,5 @@
 import React from "react";
-import ParallaxScene from "./parallax/ParallaxScene";
+import ParallaxScene from "./parallax/parallaxScene";
 import Courses from "../../components/courses/Courses";
 import Pilire from "./Pilire";
 import Recenze from "./Recenze";
