@@ -7,7 +7,7 @@ import image3 from "../../../assets/images/parallax/parallax-3.png"
 import image4 from "../../../assets/images/parallax/parallax-4.png"
 import image5 from "../../../assets/images/parallax/parallax-5.png"
 import image6 from "../../../assets/images/parallax/parallax-6.png"
-import Heading from '../Heading'
+import Heading from '../heading'
 import Button from '../../../components/button/button'
 import Fade from 'react-reveal/Fade';
 
