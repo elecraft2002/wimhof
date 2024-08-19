@@ -3,7 +3,7 @@ import "./course.css";
 import { ReactComponent as LocationSvg } from "../../assets/svgs/location.svg";
 import { ReactComponent as InfoSvg } from "../../assets/svgs/info.svg";
 import profile from "../../assets/images/Intersection 1.png";
-import Button from "../button/Button";
+import Button from "../button/button";
 import * as prismicH from "@prismicio/helpers";
 import { Fade } from "react-reveal";
 
