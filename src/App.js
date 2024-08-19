@@ -2,7 +2,7 @@ import "./App.css";
 import "normalize.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Nav from "./components/nav/nav";
-import Home from "./pages/home/Home.jsx";
+import Home from "./pages/home/home.jsx";
 // import Home from "./pages/home/Home";
 import { useSinglePrismicDocument } from "@prismicio/react";
 import { useState } from "react";
