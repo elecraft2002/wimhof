@@ -8,7 +8,7 @@ import image4 from "../../../assets/images/parallax/parallax-4.png"
 import image5 from "../../../assets/images/parallax/parallax-5.png"
 import image6 from "../../../assets/images/parallax/parallax-6.png"
 import Heading from '../Heading'
-import Button from '../../../components/button/Button'
+import Button from '../../../components/button/button'
 import Fade from 'react-reveal/Fade';
 
 export default function ParallaxScene({ url, data,language }) {

@@ -10,7 +10,7 @@ import Courses from "../../components/courses/Courses";
 import { ReactComponent as LocationSvg } from "../../assets/svgs/location.svg";
 import { ReactComponent as FoodSvg } from "../../assets/svgs/food-restaurant-icon.svg";
 import { ReactComponent as InfoSvg } from "../../assets/svgs/info.svg";
-import samolepka from "../../assets/images/samolepka.png";
+// import samolepka from "../../assets/images/samolepka.png";
 import { ReactComponent as BagSvg } from "../../assets/svgs/shopping-bag.svg";
 import ButtonClassic from "../../components/button/ButtonClassic";
 import { Fade } from "react-reveal";

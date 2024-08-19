@@ -6,7 +6,7 @@ import breathing from "../../assets/images/pilire/breathing-with-wim-hof-method.
 import cold from "../../assets/images/pilire/cold-therapy-wim-hof-method.png"
 import commitment from "../../assets/images/pilire/commitment-with-wim-hof-method.png"
 import { Fade } from 'react-reveal'
-import Button from '../../components/button/Button'
+import Button from '../../components/button/button.jsx'
 export default function Pilire({ data }) {
     return (
         <section className='pilire__container'>
