@@ -1,4 +1,8 @@
-import { PrismicRichText, usePrismicDocumentByID, useSinglePrismicDocument } from "@prismicio/react";
+import {
+  PrismicRichText,
+  usePrismicDocumentByID,
+  useSinglePrismicDocument,
+} from "@prismicio/react";
 import React from "react";
 import { useParams } from "react-router";
 import * as prismicH from "@prismicio/helpers";
@@ -67,15 +71,15 @@ export default function CoursePage({ language }) {
       <></>
     );
   }
-console.log(page)
   const { id } = useParams();
   const course = usePrismicDocumentByID(id, {
     lang: language.lang,
   });
   const data = course[0]?.data;
-
   const date =
     data && data.datum_kurzu ? prismicH.asDate(data.datum_kurzu) : null;
+  const dateEnd =
+    data && data.konec_kurzu ? prismicH.asDate(data.konec_kurzu) : null;
   if (course[1].state == "loaded" && page[1].state == "loaded")
     return (
       <main>
@@ -90,18 +94,32 @@ console.log(page)
               <h1 className="course__page__heading">
                 {data.nadpis_kurzu[0]?.text}
               </h1>
-              {data.datum_kurzu ? (
-                <div className="course__date">
-                  <p>
-                    {date.getDate()}. {date.getMonth() + 1}.
-                  </p>
-                  <p>
-                    {date.getMinutes() < 10
-                      ? date.getHours() + ":" + "0" + date.getMinutes()
-                      : date.getHours() + ":" + date.getMinutes()}
-                  </p>
-                </div>
-              ) : null}
+              <div className="course__dates">
+                {data.datum_kurzu ? (
+                  <div className="course__date">
+                    <p>
+                      {date.getDate()}. {date.getMonth() + 1}.
+                    </p>
+                    <p>
+                      {date.getMinutes() < 10
+                        ? date.getHours() + ":" + "0" + date.getMinutes()
+                        : date.getHours() + ":" + date.getMinutes()}
+                    </p>
+                  </div>
+                ) : null}
+                {data.konec_kurzu && date.getDate() != dateEnd.getDate() ? (
+                  <div className="course__date">
+                    <p>
+                      {dateEnd.getDate()}. {dateEnd.getMonth() + 1}.
+                    </p>
+                    <p>
+                      {dateEnd.getMinutes() < 10
+                        ? dateEnd.getHours() + ":" + "0" + dateEnd.getMinutes()
+                        : dateEnd.getHours() + ":" + dateEnd.getMinutes()}
+                    </p>
+                  </div>
+                ) : null}
+              </div>
             </div>
           </Fade>
         </div>

@@ -91,3 +91,8 @@
 .course__date {
   filter: drop-shadow(0 0 5px black);
 }
+
+.course__dates{
+  display: flex;
+  justify-content: space-around;
+}

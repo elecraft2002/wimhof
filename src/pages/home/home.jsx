@@ -12,7 +12,6 @@ export default function Home({ language, url }) {
   //   const page1 = usePrismicDocumentByID("YslmPxAAACIAXPpC", {
   //     lang: language.lang,
   //   });
-  //   console.log(page);
   //   console.log(page1);
   // return "test"
   if (page[1].state === "loaded")
